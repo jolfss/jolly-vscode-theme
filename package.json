@@ -1,0 +1,35 @@
+{
+  "name": "jolly",
+  "displayName": "Jolly",
+  "description": "A vibrant light theme inspired by volcanoes, glaciers, and the northern lights",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "light",
+    "volcanic",
+    "glacier",
+    "aurora",
+    "northern lights"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Jolly Light",
+        "uiTheme": "vs",
+        "path": "./themes/jolly-light-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/jolly-theme"
+  }
+}
