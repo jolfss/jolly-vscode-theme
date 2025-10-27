@@ -1,0 +1,572 @@
+{
+	"variables": {
+		// ===== LUMINOSITY =====
+		"white": "#eef2f7",         // WHITE
+		"snow": "#dadfe6",          // SNOW
+		"firn": "#bbc4d2",          // FIRN
+		"dark": "#002a5e",          // DARK
+
+		// ===== CHROMATIC =====
+		// DUSK
+		"dusk": "#9a91ae",          // DUSK
+		"clay": "#C4C2D3",          // CLAY (1:1 WHITE)
+		"gunmetal": "#676F93",      // GUNMETAL (2:1 DARK)
+
+		// INDIGO
+		"indigo": "#4000f0",        // INDIGO
+		"taro": "#9779F4",          // TARO (1:1 WHITE)
+		"zaffer": "#1715AF",        // ZAFFER (1:1 DARK)
+
+		// MAGENTA
+		"magenta": "#af00db",       // MAGENTA
+		"orchid": "#CF79E9",        // ORCHID (1:1 WHITE)
+		"amethyst": "#750eb1",      // AMETHYST (2:1 DARK)
+
+		// AMARANTH
+		"amaranth": "#cd0030",      // AMARANTH
+		"gum": "#DE7994",           // GUM (1:1 WHITE)
+		"ruby": "#890e3f",          // RUBY (2:1 DARK)
+
+		// MARIGOLD
+		"marigold": "#b37a0d",      // MARIGOLD
+		"wheat": "#D1B682",         // WHEAT (1:1 WHITE)
+		"brass": "#775F28",         // BRASS (2:1 DARK)
+
+		// MOSS
+		"moss": "#768700",          // MOSS
+		"lichen": "#B2BD7C",        // LICHEN (1:1 WHITE)
+		"fern": "#4F681F",          // FERN (2:1 DARK)
+
+		// GLACIAL
+		"glacial": "#079672",       // GLACIAL
+		"oxidized": "#7BC4B5",      // OXIDIZED (1:1 WHITE)
+		"lagoon": "#05726b",        // LAGOON (2:1 DARK)
+
+		// SKY
+		"sky": "#0081da",           // SKY
+		"denim": "#77bae9",         // DENIM (1:1 WHITE)
+		"denim_25": "#77bae940",    // DENIM_25 (25% opacity)
+		"denim_50": "#77bae980",    // DENIM_50 (50% opacity)
+		"denim_75": "#77bae9b3",    // DENIM_75 (75% opacity)
+		"polar": "#00569c",         // POLAR (1:1 DARK)
+
+		// ===== UTILITY =====
+		"transparent": "#00000000",
+		"shadow": "#0000001a",
+
+		// Merge conflicts (defined after their dependencies)
+		"mergeCurrent": "#079672",          // GLACIAL
+		"mergeCurrentHeader": "#7BC4B5",    // OXIDIZED
+		"mergeCurrentContent": "#7BC4B5",   // OXIDIZED
+		"mergeIncoming": "#00569c",         // POLAR
+		"mergeIncomingHeader": "#77bae9",   // DENIM
+		"mergeIncomingContent": "#77bae9",  // DENIM
+		"mergeCommonHeader": "#676F93",     // GUNMETAL
+		"mergeCommonContent": "#676F93"     // GUNMETAL
+	},
+	"name": "Jolly Light",
+	"type": "light",
+	"colors": {
+		// ===== EDITOR =====
+		"editor.background": "${white}",
+		"editor.foreground": "${dark}",
+		"editorLineNumber.foreground": "${gunmetal}",
+		"editorLineNumber.activeForeground": "${dark}",
+		"editorCursor.foreground": "${dark}",
+		"editorCursor.background": "${white}",
+
+		// Editor selection
+		"editor.selectionBackground": "${denim}",
+		"editor.inactiveSelectionBackground": "${snow}",
+		"editor.selectionHighlightBackground": "${clay}",
+
+		// Editor line highlight
+		"editor.lineHighlightBackground": "${snow}",
+		"editor.lineHighlightBorder": "${transparent}",
+
+		// Editor word highlight
+		"editor.wordHighlightBackground": "${clay}",
+		"editor.wordHighlightStrongBackground": "${denim}",
+		"editor.wordHighlightBorder": "${transparent}",
+
+		// Editor find/search
+		"editor.findMatchBackground": "${wheat}",
+		"editor.findMatchHighlightBackground": "${lichen}",
+		"editor.findRangeHighlightBackground": "${clay}",
+		"editor.findMatchBorder": "${marigold}",
+		"editor.findMatchHighlightBorder": "${transparent}",
+
+		// Editor brackets
+		"editorBracketMatch.background": "${denim}",
+		"editorBracketMatch.border": "${sky}",
+		"editorBracketHighlight.foreground1": "${sky}",
+		"editorBracketHighlight.foreground2": "${magenta}",
+		"editorBracketHighlight.foreground3": "${glacial}",
+		"editorBracketHighlight.foreground4": "${marigold}",
+		"editorBracketHighlight.foreground5": "${amaranth}",
+		"editorBracketHighlight.foreground6": "${indigo}",
+
+		// Editor indentation guides
+		"editorIndentGuide.background1": "${snow}",
+		"editorIndentGuide.activeBackground1": "${firn}",
+
+		// Editor whitespace
+		"editorWhitespace.foreground": "${snow}",
+
+		// Editor rulers and borders
+		"editorRuler.foreground": "${snow}",
+		"editorCodeLens.foreground": "${gunmetal}",
+		"editorOverviewRuler.border": "${firn}",
+
+		// Editor gutter (left side)
+		"editorGutter.background": "${white}",
+		"editorGutter.modifiedBackground": "${sky}",
+		"editorGutter.addedBackground": "${glacial}",
+		"editorGutter.deletedBackground": "${amaranth}",
+
+		// Editor diff colors
+		"diffEditor.insertedTextBackground": "${oxidized}",
+		"diffEditor.removedTextBackground": "${gum}",
+		"diffEditor.insertedLineBackground": "${oxidized}",
+		"diffEditor.removedLineBackground": "${gum}",
+		"diffEditor.border": "${firn}",
+
+		// Editor errors and warnings
+		"editorError.foreground": "${amaranth}",
+		"editorError.border": "${transparent}",
+		"editorWarning.foreground": "${marigold}",
+		"editorWarning.border": "${transparent}",
+		"editorInfo.foreground": "${sky}",
+		"editorInfo.border": "${transparent}",
+		"editorHint.foreground": "${gunmetal}",
+		"editorHint.border": "${transparent}",
+
+		// Editor widget (peek, suggest, etc.)
+		"editorWidget.background": "${white}",
+		"editorWidget.border": "${firn}",
+		"editorWidget.foreground": "${dark}",
+		"editorWidget.resizeBorder": "${sky}",
+		"editorSuggestWidget.background": "${white}",
+		"editorSuggestWidget.border": "${firn}",
+		"editorSuggestWidget.foreground": "${dark}",
+		"editorSuggestWidget.highlightForeground": "${sky}",
+		"editorSuggestWidget.selectedBackground": "${denim}",
+		"editorHoverWidget.background": "${white}",
+		"editorHoverWidget.border": "${firn}",
+
+		// Peek view
+		"peekView.border": "${sky}",
+		"peekViewEditor.background": "${white}",
+		"peekViewEditor.matchHighlightBackground": "${wheat}",
+		"peekViewResult.background": "${snow}",
+		"peekViewResult.fileForeground": "${dark}",
+		"peekViewResult.lineForeground": "${gunmetal}",
+		"peekViewResult.matchHighlightBackground": "${wheat}",
+		"peekViewResult.selectionBackground": "${denim}",
+		"peekViewResult.selectionForeground": "${dark}",
+		"peekViewTitle.background": "${snow}",
+		"peekViewTitleDescription.foreground": "${gunmetal}",
+		"peekViewTitleLabel.foreground": "${dark}",
+
+		// ===== ACTIVITY BAR =====
+		"activityBar.background": "${snow}",
+		"activityBar.foreground": "${gunmetal}",
+		"activityBar.inactiveForeground": "${dusk}",
+		"activityBar.border": "${firn}",
+		"activityBarBadge.background": "${amaranth}",
+		"activityBarBadge.foreground": "${white}",
+		"activityBar.activeBorder": "${sky}",
+		"activityBar.activeBackground": "${transparent}",
+		"activityBar.activeFocusBorder": "${sky}",
+		"activityBar.dropBorder": "${dark}",
+
+		// ===== SIDEBAR =====
+		"sideBar.background": "${snow}",
+		"sideBar.foreground": "${dark}",
+		"sideBar.border": "${firn}",
+		"sideBarTitle.foreground": "${dark}",
+		"sideBarSectionHeader.background": "${snow}",
+		"sideBarSectionHeader.foreground": "${gunmetal}",
+		"sideBarSectionHeader.border": "${firn}",
+
+		// ===== LISTS AND TREES =====
+		"list.activeSelectionBackground": "${sky}",
+		"list.activeSelectionForeground": "${white}",
+		"list.inactiveSelectionBackground": "${denim}",
+		"list.inactiveSelectionForeground": "${dark}",
+		"list.hoverBackground": "${clay}",
+		"list.hoverForeground": "${dark}",
+		"list.focusBackground": "${sky}",
+		"list.focusForeground": "${white}",
+		"list.focusOutline": "${sky}",
+		"list.highlightForeground": "${sky}",
+		"list.dropBackground": "${denim}",
+		"list.inactiveFocusBackground": "${snow}",
+		"list.invalidItemForeground": "${amaranth}",
+		"list.errorForeground": "${amaranth}",
+		"list.warningForeground": "${marigold}",
+		"listFilterWidget.background": "${white}",
+		"listFilterWidget.outline": "${sky}",
+		"listFilterWidget.noMatchesOutline": "${amaranth}",
+		"list.activeSelectionIconForeground": "${white}",
+		"list.focusAndSelectionOutline": "${sky}",
+
+		// Tree indentation
+		"tree.indentGuidesStroke": "${firn}",
+		"tree.inactiveIndentGuidesStroke": "${snow}",
+
+		// ===== TABS =====
+		"editorGroupHeader.tabsBackground": "${snow}",
+		"editorGroupHeader.tabsBorder": "${firn}",
+		"editorGroupHeader.border": "${firn}",
+		"editorGroup.border": "${firn}",
+		"editorGroup.dropBackground": "${denim_50}",
+
+		"tab.activeBackground": "${white}",
+		"tab.activeForeground": "${dark}",
+		"tab.activeBorder": "${white}",
+		"tab.activeBorderTop": "${sky}",
+		"tab.unfocusedActiveBorder": "${white}",
+		"tab.unfocusedActiveBorderTop": "${dusk}",
+		"tab.inactiveBackground": "${snow}",
+		"tab.inactiveForeground": "${gunmetal}",
+		"tab.unfocusedActiveForeground": "${gunmetal}",
+		"tab.unfocusedInactiveForeground": "${dusk}",
+		"tab.hoverBackground": "${clay}",
+		"tab.hoverForeground": "${dark}",
+		"tab.hoverBorder": "${transparent}",
+		"tab.border": "${firn}",
+		"tab.lastPinnedBorder": "${dusk}",
+
+		// Tab modified indicator
+		"tab.activeModifiedBorder": "${sky}",
+		"tab.inactiveModifiedBorder": "${dusk}",
+		"tab.unfocusedActiveModifiedBorder": "${dusk}",
+		"tab.unfocusedInactiveModifiedBorder": "${dusk}",
+
+		// ===== PANELS (Terminal, Output, etc.) =====
+		"panel.background": "${snow}",
+		"panel.border": "${firn}",
+		"panelTitle.activeBorder": "${sky}",
+		"panelTitle.activeForeground": "${dark}",
+		"panelTitle.inactiveForeground": "${gunmetal}",
+		"panelSection.border": "${firn}",
+		"panelSection.dropBackground": "${denim_50}",
+		"panelSectionHeader.background": "${snow}",
+		"panelSectionHeader.foreground": "${gunmetal}",
+		"panelSectionHeader.border": "${firn}",
+
+		// ===== STATUS BAR =====
+		"statusBar.background": "${snow}",
+		"statusBar.foreground": "${dark}",
+		"statusBar.border": "${firn}",
+		"statusBar.debuggingBackground": "${marigold}",
+		"statusBar.debuggingForeground": "${white}",
+		"statusBar.noFolderBackground": "${snow}",
+		"statusBar.noFolderForeground": "${dark}",
+		"statusBarItem.activeBackground": "${denim_50}",
+		"statusBarItem.hoverBackground": "${denim_25}",
+		"statusBarItem.prominentBackground": "${sky}",
+		"statusBarItem.prominentForeground": "${white}",
+		"statusBarItem.prominentHoverBackground": "${polar}",
+		"statusBarItem.remoteBackground": "${sky}",
+		"statusBarItem.remoteForeground": "${white}",
+		"statusBarItem.errorBackground": "${amaranth}",
+		"statusBarItem.errorForeground": "${white}",
+		"statusBarItem.warningBackground": "${marigold}",
+		"statusBarItem.warningForeground": "${white}",
+
+		// ===== TITLE BAR =====
+		"titleBar.activeBackground": "${snow}",
+		"titleBar.activeForeground": "${dark}",
+		"titleBar.inactiveBackground": "${snow}",
+		"titleBar.inactiveForeground": "${dusk}",
+		"titleBar.border": "${firn}",
+
+		// ===== MENU BAR =====
+		"menubar.selectionForeground": "${dark}",
+		"menubar.selectionBackground": "${clay}",
+		"menubar.selectionBorder": "${firn}",
+		"menu.foreground": "${dark}",
+		"menu.background": "${white}",
+		"menu.selectionForeground": "${white}",
+		"menu.selectionBackground": "${sky}",
+		"menu.separatorBackground": "${firn}",
+		"menu.border": "${firn}",
+
+		// ===== BUTTONS =====
+		"button.background": "${sky}",
+		"button.foreground": "${white}",
+		"button.hoverBackground": "${polar}",
+		"button.secondaryBackground": "${amethyst}",
+		"button.secondaryForeground": "${white}",
+		"button.secondaryHoverBackground": "${amethyst}",
+		"button.border": "${transparent}",
+
+		// ===== INPUT FIELDS =====
+		"input.background": "${white}",
+		"input.border": "${firn}",
+		"input.foreground": "${dark}",
+		"input.placeholderForeground": "${firn}",
+		"inputOption.activeBorder": "${sky}",
+		"inputOption.activeBackground": "${denim}",
+		"inputOption.activeForeground": "${dark}",
+		"inputValidation.errorBackground": "${gum}",
+		"inputValidation.errorBorder": "${amaranth}",
+		"inputValidation.errorForeground": "${dark}",
+		"inputValidation.infoBackground": "${denim}",
+		"inputValidation.infoBorder": "${sky}",
+		"inputValidation.infoForeground": "${dark}",
+		"inputValidation.warningBackground": "${wheat}",
+		"inputValidation.warningBorder": "${marigold}",
+		"inputValidation.warningForeground": "${dark}",
+
+		// ===== DROPDOWNS =====
+		"dropdown.background": "${white}",
+		"dropdown.border": "${firn}",
+		"dropdown.foreground": "${dark}",
+		"dropdown.listBackground": "${white}",
+
+		// ===== NOTIFICATIONS =====
+		"notificationCenter.border": "${firn}",
+		"notificationCenterHeader.foreground": "${dark}",
+		"notificationCenterHeader.background": "${snow}",
+		"notificationToast.border": "${firn}",
+		"notifications.foreground": "${dark}",
+		"notifications.background": "${white}",
+		"notifications.border": "${firn}",
+		"notificationLink.foreground": "${sky}",
+		"notificationsErrorIcon.foreground": "${amaranth}",
+		"notificationsWarningIcon.foreground": "${marigold}",
+		"notificationsInfoIcon.foreground": "${sky}",
+
+		// ===== BADGES =====
+		"badge.background": "${sky}",
+		"badge.foreground": "${white}",
+
+		// ===== SCROLLBAR =====
+		"scrollbar.shadow": "${shadow}",
+		"scrollbarSlider.background": "${gunmetal}",
+		"scrollbarSlider.hoverBackground": "${dusk}",
+		"scrollbarSlider.activeBackground": "${dark}",
+
+		// ===== PROGRESS BAR =====
+		"progressBar.background": "${sky}",
+
+		// ===== BREADCRUMBS =====
+		"breadcrumb.foreground": "${gunmetal}",
+		"breadcrumb.background": "${white}",
+		"breadcrumb.focusForeground": "${dark}",
+		"breadcrumb.activeSelectionForeground": "${dark}",
+		"breadcrumbPicker.background": "${white}",
+
+		// ===== MINIMAP =====
+		"minimap.findMatchHighlight": "${wheat}",
+		"minimap.selectionHighlight": "${denim_50}",
+		"minimap.errorHighlight": "${amaranth}",
+		"minimap.warningHighlight": "${marigold}",
+		"minimapGutter.addedBackground": "${glacial}",
+		"minimapGutter.modifiedBackground": "${sky}",
+		"minimapGutter.deletedBackground": "${amaranth}",
+
+		// ===== TERMINAL =====
+		"terminal.background": "${white}",
+		"terminal.foreground": "${dark}",
+		"terminal.border": "${firn}",
+		"terminal.selectionBackground": "${denim}",
+		"terminalCursor.background": "${white}",
+		"terminalCursor.foreground": "${dark}",
+
+		// Terminal ANSI colors
+		"terminal.ansiBlack": "${dark}",
+		"terminal.ansiRed": "${amaranth}",
+		"terminal.ansiGreen": "${glacial}",
+		"terminal.ansiYellow": "${marigold}",
+		"terminal.ansiBlue": "${sky}",
+		"terminal.ansiMagenta": "${magenta}",
+		"terminal.ansiCyan": "${glacial}",
+		"terminal.ansiWhite": "${firn}",
+
+		// Terminal ANSI bright colors
+		"terminal.ansiBrightBlack": "${gunmetal}",
+		"terminal.ansiBrightRed": "${gum}",
+		"terminal.ansiBrightGreen": "${oxidized}",
+		"terminal.ansiBrightYellow": "${wheat}",
+		"terminal.ansiBrightBlue": "${denim}",
+		"terminal.ansiBrightMagenta": "${orchid}",
+		"terminal.ansiBrightCyan": "${oxidized}",
+		"terminal.ansiBrightWhite": "${white}",
+
+		// ===== GIT COLORS =====
+		"gitDecoration.addedResourceForeground": "${glacial}",
+		"gitDecoration.modifiedResourceForeground": "${sky}",
+		"gitDecoration.deletedResourceForeground": "${amaranth}",
+		"gitDecoration.untrackedResourceForeground": "${glacial}",
+		"gitDecoration.ignoredResourceForeground": "${dusk}",
+		"gitDecoration.conflictingResourceForeground": "${marigold}",
+		"gitDecoration.submoduleResourceForeground": "${gunmetal}",
+
+		// ===== DEBUG =====
+		"debugToolBar.background": "${white}",
+		"debugToolBar.border": "${firn}",
+		"debugIcon.breakpointForeground": "${amaranth}",
+		"debugIcon.breakpointDisabledForeground": "${dusk}",
+		"debugIcon.breakpointUnverifiedForeground": "${marigold}",
+		"debugIcon.breakpointCurrentStackframeForeground": "${marigold}",
+		"debugIcon.breakpointStackframeForeground": "${gunmetal}",
+		"debugIcon.startForeground": "${glacial}",
+		"debugIcon.pauseForeground": "${sky}",
+		"debugIcon.stopForeground": "${amaranth}",
+		"debugIcon.disconnectForeground": "${amaranth}",
+		"debugIcon.restartForeground": "${glacial}",
+		"debugIcon.stepOverForeground": "${sky}",
+		"debugIcon.stepIntoForeground": "${sky}",
+		"debugIcon.stepOutForeground": "${sky}",
+		"debugIcon.continueForeground": "${glacial}",
+		"debugIcon.stepBackForeground": "${sky}",
+
+		// ===== TESTING =====
+		"testing.iconFailed": "${amaranth}",
+		"testing.iconErrored": "${amaranth}",
+		"testing.iconPassed": "${glacial}",
+		"testing.runAction": "${glacial}",
+		"testing.iconQueued": "${marigold}",
+		"testing.iconUnset": "${dusk}",
+		"testing.iconSkipped": "${dusk}",
+
+		// ===== CHARTS & VISUALIZATIONS =====
+		"charts.red": "${amaranth}",
+		"charts.blue": "${sky}",
+		"charts.yellow": "${marigold}",
+		"charts.orange": "${amaranth}",
+		"charts.green": "${glacial}",
+		"charts.purple": "${magenta}",
+		"charts.foreground": "${dark}",
+		"charts.lines": "${firn}",
+
+		// ===== MERGE CONFLICTS =====
+		"merge.currentHeaderBackground": "${mergeCurrentHeader}",
+		"merge.currentContentBackground": "${mergeCurrentContent}",
+		"merge.incomingHeaderBackground": "${mergeIncomingHeader}",
+		"merge.incomingContentBackground": "${mergeIncomingContent}",
+		"merge.border": "${firn}",
+		"merge.commonHeaderBackground": "${mergeCommonHeader}",
+		"merge.commonContentBackground": "${mergeCommonContent}",
+		"editorOverviewRuler.currentContentForeground": "${mergeCurrent}",
+		"editorOverviewRuler.incomingContentForeground": "${mergeIncoming}",
+		"editorOverviewRuler.commonContentForeground": "${dusk}",
+
+		// ===== SETTINGS EDITOR =====
+		"settings.headerForeground": "${dark}",
+		"settings.modifiedItemIndicator": "${sky}",
+		"settings.dropdownBackground": "${white}",
+		"settings.dropdownForeground": "${dark}",
+		"settings.dropdownBorder": "${firn}",
+		"settings.dropdownListBorder": "${firn}",
+		"settings.checkboxBackground": "${white}",
+		"settings.checkboxForeground": "${dark}",
+		"settings.checkboxBorder": "${firn}",
+		"settings.textInputBackground": "${white}",
+		"settings.textInputForeground": "${dark}",
+		"settings.textInputBorder": "${firn}",
+		"settings.numberInputBackground": "${white}",
+		"settings.numberInputForeground": "${dark}",
+		"settings.numberInputBorder": "${firn}",
+
+		// ===== WELCOME PAGE =====
+		"walkThrough.embeddedEditorBackground": "${white}",
+
+		// ===== EXTENSIONS =====
+		"extensionButton.prominentBackground": "${sky}",
+		"extensionButton.prominentForeground": "${white}",
+		"extensionButton.prominentHoverBackground": "${polar}",
+		"extensionBadge.remoteBackground": "${sky}",
+		"extensionBadge.remoteForeground": "${white}",
+		"extensionIcon.starForeground": "${marigold}",
+		"extensionIcon.verifiedForeground": "${glacial}",
+
+		// ===== QUICK PICKER =====
+		"pickerGroup.border": "${firn}",
+		"pickerGroup.foreground": "${sky}",
+		"quickInput.background": "${white}",
+		"quickInput.foreground": "${dark}",
+		"quickInputList.focusBackground": "${denim}",
+		"quickInputList.focusForeground": "${dark}",
+		"quickInputList.focusIconForeground": "${dark}",
+		"quickInputTitle.background": "${snow}",
+
+		// ===== KEY BINDINGS =====
+		"keybindingLabel.background": "${snow}",
+		"keybindingLabel.foreground": "${dark}",
+		"keybindingLabel.border": "${firn}",
+		"keybindingLabel.bottomBorder": "${firn}",
+
+		// ===== CONTRAST BORDERS =====
+		"contrastBorder": "${transparent}",
+		"contrastActiveBorder": "${transparent}",
+
+		// ===== FOCUS BORDERS =====
+		"focusBorder": "${sky}",
+
+		// ===== BASE COLORS =====
+		"foreground": "${dark}",
+		"disabledForeground": "${dusk}",
+		"widget.border": "${firn}",
+		"widget.shadow": "${shadow}",
+		"selection.background": "${denim}",
+		"descriptionForeground": "${gunmetal}",
+		"errorForeground": "${amaranth}",
+		"icon.foreground": "${gunmetal}",
+		"sash.hoverBorder": "${sky}"
+	},
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		// Namespaces & Modules
+		"namespace": "${indigo}",
+		"module": "${indigo}",
+
+		// Classes - only when used in declarations
+		"class.declaration": "${amaranth}",
+		"struct.declaration": "${amaranth}",
+		"enum.declaration": "${amaranth}",
+		"interface.declaration": "${amaranth}",
+
+		// Types - all type references and usage (ice blue)
+		"class": "${amaranth}",
+		"struct": "${sky}",
+		"enum": "${sky}",
+		"interface": "${sky}",
+		"type": "${sky}",
+		"typeParameter": "${sky}",
+		"*.typeHint": "${sky}",
+
+		// Functions & Methods (GOLD)
+		"function": "${marigold}",
+		"method": "${marigold}",
+		"macro": "${marigold}",
+
+		// Variables (earthy brown)
+		"variable": "${brass}",
+		"variable.readonly": "${moss}",
+		"variable.defaultLibrary": "${magenta}",
+
+		// Parameters (dark navy blue)
+		"parameter": "${zaffer}",
+
+		// Properties
+		"property": "${ruby}",
+		"property.readonly": "${moss}",
+		"enumMember": "${moss}",
+
+		// Decorators
+		"decorator": "${marigold}",
+		"event": "${marigold}",
+		"label": "${sky}",
+		"keyword": "${magenta}",
+		"operator": "${glacial}",
+		"string": "${lagoon}",
+		"number": "${moss}",
+		"regexp": "${magenta}",
+		"comment": "${dusk}"
+	}
+}

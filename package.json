@@ -31,5 +31,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/your-username/jolly-theme"
+  },
+  "scripts": {
+    "build": "uv run build_theme.py",
+    "watch": "uv run --with watchdog watchmedo shell-command --patterns='*.json5' --recursive --command='uv run build_theme.py' themes/"
   }
 }
