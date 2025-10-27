@@ -10,6 +10,7 @@
 		// DUSK
 		"dusk": "#9a91ae",          // DUSK
 		"clay": "#C4C2D3",          // CLAY (1:1 WHITE)
+		"clay_50": "#C4C2D380",     // CLAY_50 (50% opacity)
 		"gunmetal": "#676F93",      // GUNMETAL (2:1 DARK)
 		"gunmetal_50": "#676F9380", // GUNMETAL_50 (50% opacity)
 
@@ -33,11 +34,13 @@
 		// MARIGOLD
 		"marigold": "#b37a0d",      // MARIGOLD
 		"wheat": "#D1B682",         // WHEAT (1:1 WHITE)
+		"wheat_50": "#D1B68280",    // WHEAT_50 (50% opacity)
 		"brass": "#775F28",         // BRASS (2:1 DARK)
 
 		// MOSS
 		"moss": "#768700",          // MOSS
 		"lichen": "#B2BD7C",        // LICHEN (1:1 WHITE)
+		"lichen_50": "#B2BD7C80",   // LICHEN_50 (50% opacity)
 		"fern": "#4F681F",          // FERN (2:1 DARK)
 
 		// GLACIAL
@@ -50,6 +53,7 @@
 		"sky": "#0081da",           // SKY
 		"denim": "#77bae9",         // DENIM (1:1 WHITE)
 		"denim_25": "#77bae940",    // DENIM_25 (25% opacity)
+		"denim_35": "#77bae959",    // DENIM_35 (35% opacity)
 		"denim_50": "#77bae980",    // DENIM_50 (50% opacity)
 		"denim_75": "#77bae9b3",    // DENIM_75 (75% opacity)
 		"polar": "#00569c",         // POLAR (1:1 DARK)
@@ -80,28 +84,28 @@
 		"editorCursor.background": "${white}",
 
 		// Editor selection
-		"editor.selectionBackground": "${denim_50}",
-		"editor.inactiveSelectionBackground": "${snow}",
-		"editor.selectionHighlightBackground": "${clay}",
+		"editor.selectionBackground": "${denim_35}",
+		"editor.inactiveSelectionBackground": "${denim_25}",
+		"editor.selectionHighlightBackground": "${clay_50}",
 
 		// Editor line highlight
 		"editor.lineHighlightBackground": "${snow}",
 		"editor.lineHighlightBorder": "${transparent}",
 
 		// Editor word highlight
-		"editor.wordHighlightBackground": "${clay}",
-		"editor.wordHighlightStrongBackground": "${denim}",
+		"editor.wordHighlightBackground": "${clay_50}",
+		"editor.wordHighlightStrongBackground": "${denim_50}",
 		"editor.wordHighlightBorder": "${transparent}",
 
 		// Editor find/search
-		"editor.findMatchBackground": "${wheat}",
-		"editor.findMatchHighlightBackground": "${lichen}",
-		"editor.findRangeHighlightBackground": "${clay}",
+		"editor.findMatchBackground": "${wheat_50}",
+		"editor.findMatchHighlightBackground": "${lichen_50}",
+		"editor.findRangeHighlightBackground": "${clay_50}",
 		"editor.findMatchBorder": "${marigold}",
 		"editor.findMatchHighlightBorder": "${transparent}",
 
 		// Editor brackets
-		"editorBracketMatch.background": "${denim}",
+		"editorBracketMatch.background": "${denim_50}",
 		"editorBracketMatch.border": "${sky}",
 		"editorBracketHighlight.foreground1": "${sky}",
 		"editorBracketHighlight.foreground2": "${magenta}",
@@ -194,18 +198,18 @@
 		"sideBarSectionHeader.border": "${firn}",
 
 		// ===== LISTS AND TREES =====
-		"list.activeSelectionBackground": "${sky}",
-		"list.activeSelectionForeground": "${white}",
-		"list.inactiveSelectionBackground": "${denim}",
+		"list.activeSelectionBackground": "${denim_50}",
+		"list.activeSelectionForeground": "${dark}",
+		"list.inactiveSelectionBackground": "${denim_25}",
 		"list.inactiveSelectionForeground": "${dark}",
-		"list.hoverBackground": "${clay}",
+		"list.hoverBackground": "${clay_50}",
 		"list.hoverForeground": "${dark}",
-		"list.focusBackground": "${sky}",
-		"list.focusForeground": "${white}",
+		"list.focusBackground": "${denim_50}",
+		"list.focusForeground": "${dark}",
 		"list.focusOutline": "${sky}",
 		"list.highlightForeground": "${sky}",
-		"list.dropBackground": "${denim}",
-		"list.inactiveFocusBackground": "${snow}",
+		"list.dropBackground": "${denim_50}",
+		"list.inactiveFocusBackground": "${denim_25}",
 		"list.invalidItemForeground": "${amaranth}",
 		"list.errorForeground": "${amaranth}",
 		"list.warningForeground": "${marigold}",
@@ -236,7 +240,7 @@
 		"tab.inactiveForeground": "${gunmetal}",
 		"tab.unfocusedActiveForeground": "${gunmetal}",
 		"tab.unfocusedInactiveForeground": "${dusk}",
-		"tab.hoverBackground": "${clay}",
+		"tab.hoverBackground": "${clay_50}",
 		"tab.hoverForeground": "${dark}",
 		"tab.hoverBorder": "${transparent}",
 		"tab.border": "${firn}",
@@ -365,8 +369,8 @@
 		"breadcrumbPicker.background": "${white}",
 
 		// ===== MINIMAP =====
-		"minimap.findMatchHighlight": "${wheat}",
-		"minimap.selectionHighlight": "${denim_50}",
+		"minimap.findMatchHighlight": "${wheat_50}",
+		"minimap.selectionHighlight": "${denim_35}",
 		"minimap.errorHighlight": "${amaranth}",
 		"minimap.warningHighlight": "${marigold}",
 		"minimapGutter.addedBackground": "${glacial}",
