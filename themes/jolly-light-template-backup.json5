@@ -11,7 +11,6 @@
 		"dusk": "#9a91ae",          // DUSK
 		"clay": "#C4C2D3",          // CLAY (1:1 WHITE)
 		"gunmetal": "#676F93",      // GUNMETAL (2:1 DARK)
-		"gunmetal_50": "#676F9380", // GUNMETAL_50 (50% opacity)
 
 		// INDIGO
 		"indigo": "#2e00ff",        // INDIGO
@@ -26,8 +25,7 @@
 		// AMARANTH
 		"amaranth": "#cd0030",      // AMARANTH
 		"gum": "#DE7994",           // GUM (1:1 WHITE)
-		"gum_50": "#DE799480",      // GUM_50 (50% opacity)
-		"tamarind": "#c34f1d",
+		"tamarind": "#c34f1d", 	
 		"ruby": "#980349",          // RUBY (2:1 DARK)
 
 		// MARIGOLD
@@ -43,7 +41,6 @@
 		// GLACIAL
 		"glacial": "#079672",       // GLACIAL
 		"oxidized": "#7BC4B5",      // OXIDIZED (1:1 WHITE)
-		"oxidized_50": "#7BC4B580", // OXIDIZED_50 (50% opacity)
 		"lagoon": "#05726b",        // LAGOON (2:1 DARK)
 
 		// SKY
@@ -60,13 +57,13 @@
 
 		// Merge conflicts (defined after their dependencies)
 		"mergeCurrent": "#079672",          // GLACIAL
-		"mergeCurrentHeader": "#7BC4B580",  // OXIDIZED_50 (50% opacity)
-		"mergeCurrentContent": "#7BC4B580", // OXIDIZED_50 (50% opacity)
+		"mergeCurrentHeader": "#7BC4B5",    // OXIDIZED
+		"mergeCurrentContent": "#7BC4B5",   // OXIDIZED
 		"mergeIncoming": "#00569c",         // POLAR
-		"mergeIncomingHeader": "#77bae980", // DENIM_50 (50% opacity)
-		"mergeIncomingContent": "#77bae980",// DENIM_50 (50% opacity)
-		"mergeCommonHeader": "#676F9380",   // GUNMETAL_50 (50% opacity)
-		"mergeCommonContent": "#676F9380"   // GUNMETAL_50 (50% opacity)
+		"mergeIncomingHeader": "#77bae9",   // DENIM
+		"mergeIncomingContent": "#77bae9",  // DENIM
+		"mergeCommonHeader": "#676F93",     // GUNMETAL
+		"mergeCommonContent": "#676F93"     // GUNMETAL
 	},
 	"name": "Jolly Light",
 	"type": "light",
@@ -80,7 +77,7 @@
 		"editorCursor.background": "${white}",
 
 		// Editor selection
-		"editor.selectionBackground": "${denim_50}",
+		"editor.selectionBackground": "${denim}",
 		"editor.inactiveSelectionBackground": "${snow}",
 		"editor.selectionHighlightBackground": "${clay}",
 
@@ -129,10 +126,10 @@
 		"editorGutter.deletedBackground": "${amaranth}",
 
 		// Editor diff colors
-		"diffEditor.insertedTextBackground": "${oxidized_50}",
-		"diffEditor.removedTextBackground": "${gum_50}",
-		"diffEditor.insertedLineBackground": "${oxidized_50}",
-		"diffEditor.removedLineBackground": "${gum_50}",
+		"diffEditor.insertedTextBackground": "${oxidized}",
+		"diffEditor.removedTextBackground": "${gum}",
+		"diffEditor.insertedLineBackground": "${oxidized}",
+		"diffEditor.removedLineBackground": "${gum}",
 		"diffEditor.border": "${firn}",
 
 		// Editor errors and warnings
@@ -555,24 +552,21 @@
 		"variable": "${dark}",
 		"variable.readonly": "${zaffer}",
 
-		// Builtin Constants
-		"builtinConstant": "${magenta}",
-
 		// Properties
-		"property": "${tamarind}",
+		"property": "${rouge}",
 
 		// Enum Members
 		"enumMember": "${lagoon}",
 
 		// Decorators
-		"decorator": "${brass}",
+		"decorator": "${taro}",
 
 		// Events
 		"event": "${amaranth}",
 
 		// Functions & Methods
 		"function": "${marigold}",
-		"function.decorator": "${brass}",
+		"function.decorator": "${taro}",
 		"magicFunction": "${ruby}",
 		"method": "${ruby}",
 
@@ -674,15 +668,6 @@
 			],
 			"settings": {
 				"foreground": "${lagoon}"
-			}
-		},
-		// Python builtin constants (None, True, False, ...)
-		{
-			"scope": [
-				"constant.language.python"
-			],
-			"settings": {
-				"foreground": "${magenta}"
 			}
 		},
 		// Python CAPS constants
@@ -862,7 +847,7 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "${tamarind}"
+				"foreground": "${rouge}"
 			}
 		},
 
@@ -874,7 +859,7 @@
 				"punctuation.decorator"
 			],
 			"settings": {
-				"foreground": "${brass}"
+				"foreground": "${taro}"
 			}
 		},
 		// Python-specific decorator overrides
@@ -885,7 +870,7 @@
 				"meta.function.decorator.python"
 			],
 			"settings": {
-				"foreground": "${brass}"
+				"foreground": "${taro}"
 			}
 		},
 
