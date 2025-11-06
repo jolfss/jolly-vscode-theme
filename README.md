@@ -1,21 +1,16 @@
-# Jolly Light Theme
+# jolly-light
 
 A vibrant light theme for VSCode inspired by volcanoes, glaciers, and the northern lights.
 
-## Development
+![](JOLLY-LIGHT.png)
 
-This theme uses a build system to manage color variables and make editing easier.
+## Building the Theme
 
-### Setup
-
-Make sure you have [uv](https://docs.astral.sh/uv/) installed:
-
-
-### Building the Theme
+This theme uses a simple build system to manage color variables in a template.
 
 The source theme is in [themes/jolly-light-template.json5](themes/jolly-light-template.json5), which supports:
-- **Comments** (using `//` syntax)
-- **Color variables** (defined in the `variables` section)
+- Color variables (defined in the `variables` section, referenced later using `${variableName}` syntax in the main body)
+- Comments are elided (using `//` syntax for json5)
 
 To build the final theme:
 
@@ -33,15 +28,7 @@ To automatically rebuild when you edit the template:
 npm run watch
 ```
 
-### Editing Colors
-
-1. Edit [themes/jolly-light-template.json5](themes/jolly-light-template.json5)
-2. Modify colors in the `variables` section at the top
-3. Reference variables using `${variableName}` syntax
-4. Run `uv run build_theme.py` to generate the final theme
-5. Reload VSCode to see changes
-
-### Example
+### Color Preprocess Example
 
 ```json5
 {
@@ -63,13 +50,7 @@ npm run watch
 - [build_theme.py](build_theme.py) - Build script
 - [pyproject.toml](pyproject.toml) - Python dependencies (json5)
 
-## Publishing
-
-1. Update the `publisher` field in [package.json](package.json) to match your Marketplace publisher ID and adjust the `repository` URL if needed.
-2. Regenerate the compiled theme with `uv run build_theme.py` to ensure `themes/jolly-light-color-theme.json` is current.
-3. Package the extension with `npx vsce package`, which produces a `jolly-1.0.0.vsix` in the project root.
-4. Publish with `npx vsce publish` or upload the VSIX through the Marketplace portal.
 
 ## License
 
-MIT
+Creative Commons - enjoy :)
