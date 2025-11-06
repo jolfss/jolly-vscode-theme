@@ -10,9 +10,6 @@ This theme uses a build system to manage color variables and make editing easier
 
 Make sure you have [uv](https://docs.astral.sh/uv/) installed:
 
-```bash
-brew install uv
-```
 
 ### Building the Theme
 
@@ -65,6 +62,13 @@ npm run watch
 - [themes/jolly-light-color-theme.json](themes/jolly-light-color-theme.json) - Generated theme (do not edit)
 - [build_theme.py](build_theme.py) - Build script
 - [pyproject.toml](pyproject.toml) - Python dependencies (json5)
+
+## Publishing
+
+1. Update the `publisher` field in [package.json](package.json) to match your Marketplace publisher ID and adjust the `repository` URL if needed.
+2. Regenerate the compiled theme with `uv run build_theme.py` to ensure `themes/jolly-light-color-theme.json` is current.
+3. Package the extension with `npx vsce package`, which produces a `jolly-1.0.0.vsix` in the project root.
+4. Publish with `npx vsce publish` or upload the VSIX through the Marketplace portal.
 
 ## License
 

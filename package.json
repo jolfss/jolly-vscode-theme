@@ -2,8 +2,8 @@
   "name": "jolly",
   "displayName": "Jolly",
   "description": "A vibrant light theme inspired by volcanoes, glaciers, and the northern lights",
-  "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "version": "1.0.0",
+  "publisher": "SeanBrynjolfsson",
   "engines": {
     "vscode": "^1.105.0"
   },
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/jolly-theme"
+    "url": "https://github.com/jolfss/jolly-vscode-theme"
   },
   "scripts": {
     "build": "uv run build_theme.py",
