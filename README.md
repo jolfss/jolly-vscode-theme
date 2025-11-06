@@ -1,8 +1,8 @@
 # jolly-light
 
-A vibrant light theme for VSCode inspired by volcanoes, glaciers, and the northern lights.
+A vibrant light theme for VSCode inspired by volcanoes, glaciers, and the northern lights. If your code starts to feel too hot, add some types or modularize to cool it down :-)
 
-![](JOLLY-LIGHT.png)
+![A screenshot of the VSCode IDE with a python file for demonstrating syntax highlighting; the theme is vibrant and blue-tinted.](JOLLY-LIGHT.png)
 
 ## Building the Theme
 
