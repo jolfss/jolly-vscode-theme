@@ -15,7 +15,7 @@
 		"gunmetal_50": "#676F9380", // GUNMETAL_50 (50% opacity)
 
 		// INDIGO
-		"indigo": "#2e00ff",        // INDIGO
+		"indigo": "#4920ff",        // INDIGO
 		"taro": "#9779F4",          // TARO (1:1 WHITE)
 		"zaffer": "#1715AF",        // ZAFFER (1:1 DARK)
 
@@ -32,8 +32,8 @@
 		"ruby": "#980349",          // RUBY (2:1 DARK)
 
 		// MARIGOLD
-		"marigold": "#b37a0d",      // MARIGOLD
-		"wheat": "#D1B682",         // WHEAT (1:1 WHITE)
+		"marigold": "#9f6c0e",      // MARIGOLD
+		"wheat": "#bca476",         // WHEAT (1:1 WHITE)
 		"wheat_50": "#D1B68280",    // WHEAT_50 (50% opacity)
 		"brass": "#775F28",         // BRASS (2:1 DARK)
 

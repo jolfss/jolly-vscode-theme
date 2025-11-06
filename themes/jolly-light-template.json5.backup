@@ -10,7 +10,9 @@
 		// DUSK
 		"dusk": "#9a91ae",          // DUSK
 		"clay": "#C4C2D3",          // CLAY (1:1 WHITE)
+		"clay_50": "#C4C2D380",     // CLAY_50 (50% opacity)
 		"gunmetal": "#676F93",      // GUNMETAL (2:1 DARK)
+		"gunmetal_50": "#676F9380", // GUNMETAL_50 (50% opacity)
 
 		// INDIGO
 		"indigo": "#2e00ff",        // INDIGO
@@ -25,28 +27,33 @@
 		// AMARANTH
 		"amaranth": "#cd0030",      // AMARANTH
 		"gum": "#DE7994",           // GUM (1:1 WHITE)
-		"tamarind": "#c34f1d", 	
+		"gum_50": "#DE799480",      // GUM_50 (50% opacity)
+		"tamarind": "#c34f1d",
 		"ruby": "#980349",          // RUBY (2:1 DARK)
 
 		// MARIGOLD
 		"marigold": "#b37a0d",      // MARIGOLD
 		"wheat": "#D1B682",         // WHEAT (1:1 WHITE)
+		"wheat_50": "#D1B68280",    // WHEAT_50 (50% opacity)
 		"brass": "#775F28",         // BRASS (2:1 DARK)
 
 		// MOSS
 		"moss": "#768700",          // MOSS
 		"lichen": "#B2BD7C",        // LICHEN (1:1 WHITE)
+		"lichen_50": "#B2BD7C80",   // LICHEN_50 (50% opacity)
 		"fern": "#4F681F",          // FERN (2:1 DARK)
 
 		// GLACIAL
 		"glacial": "#079672",       // GLACIAL
 		"oxidized": "#7BC4B5",      // OXIDIZED (1:1 WHITE)
+		"oxidized_50": "#7BC4B580", // OXIDIZED_50 (50% opacity)
 		"lagoon": "#05726b",        // LAGOON (2:1 DARK)
 
 		// SKY
 		"sky": "#0081da",           // SKY
 		"denim": "#77bae9",         // DENIM (1:1 WHITE)
 		"denim_25": "#77bae940",    // DENIM_25 (25% opacity)
+		"denim_35": "#77bae959",    // DENIM_35 (35% opacity)
 		"denim_50": "#77bae980",    // DENIM_50 (50% opacity)
 		"denim_75": "#77bae9b3",    // DENIM_75 (75% opacity)
 		"polar": "#00569c",         // POLAR (1:1 DARK)
@@ -57,13 +64,13 @@
 
 		// Merge conflicts (defined after their dependencies)
 		"mergeCurrent": "#079672",          // GLACIAL
-		"mergeCurrentHeader": "#7BC4B5",    // OXIDIZED
-		"mergeCurrentContent": "#7BC4B5",   // OXIDIZED
+		"mergeCurrentHeader": "#7BC4B580",  // OXIDIZED_50 (50% opacity)
+		"mergeCurrentContent": "#7BC4B580", // OXIDIZED_50 (50% opacity)
 		"mergeIncoming": "#00569c",         // POLAR
-		"mergeIncomingHeader": "#77bae9",   // DENIM
-		"mergeIncomingContent": "#77bae9",  // DENIM
-		"mergeCommonHeader": "#676F93",     // GUNMETAL
-		"mergeCommonContent": "#676F93"     // GUNMETAL
+		"mergeIncomingHeader": "#77bae980", // DENIM_50 (50% opacity)
+		"mergeIncomingContent": "#77bae980",// DENIM_50 (50% opacity)
+		"mergeCommonHeader": "#676F9380",   // GUNMETAL_50 (50% opacity)
+		"mergeCommonContent": "#676F9380"   // GUNMETAL_50 (50% opacity)
 	},
 	"name": "Jolly Light",
 	"type": "light",
@@ -77,28 +84,28 @@
 		"editorCursor.background": "${white}",
 
 		// Editor selection
-		"editor.selectionBackground": "${denim}",
-		"editor.inactiveSelectionBackground": "${snow}",
-		"editor.selectionHighlightBackground": "${clay}",
+		"editor.selectionBackground": "${denim_35}",
+		"editor.inactiveSelectionBackground": "${denim_25}",
+		"editor.selectionHighlightBackground": "${clay_50}",
 
 		// Editor line highlight
 		"editor.lineHighlightBackground": "${snow}",
 		"editor.lineHighlightBorder": "${transparent}",
 
 		// Editor word highlight
-		"editor.wordHighlightBackground": "${clay}",
-		"editor.wordHighlightStrongBackground": "${denim}",
+		"editor.wordHighlightBackground": "${clay_50}",
+		"editor.wordHighlightStrongBackground": "${denim_50}",
 		"editor.wordHighlightBorder": "${transparent}",
 
 		// Editor find/search
-		"editor.findMatchBackground": "${wheat}",
-		"editor.findMatchHighlightBackground": "${lichen}",
-		"editor.findRangeHighlightBackground": "${clay}",
+		"editor.findMatchBackground": "${wheat_50}",
+		"editor.findMatchHighlightBackground": "${lichen_50}",
+		"editor.findRangeHighlightBackground": "${clay_50}",
 		"editor.findMatchBorder": "${marigold}",
 		"editor.findMatchHighlightBorder": "${transparent}",
 
 		// Editor brackets
-		"editorBracketMatch.background": "${denim}",
+		"editorBracketMatch.background": "${denim_50}",
 		"editorBracketMatch.border": "${sky}",
 		"editorBracketHighlight.foreground1": "${sky}",
 		"editorBracketHighlight.foreground2": "${magenta}",
@@ -126,10 +133,10 @@
 		"editorGutter.deletedBackground": "${amaranth}",
 
 		// Editor diff colors
-		"diffEditor.insertedTextBackground": "${oxidized}",
-		"diffEditor.removedTextBackground": "${gum}",
-		"diffEditor.insertedLineBackground": "${oxidized}",
-		"diffEditor.removedLineBackground": "${gum}",
+		"diffEditor.insertedTextBackground": "${oxidized_50}",
+		"diffEditor.removedTextBackground": "${gum_50}",
+		"diffEditor.insertedLineBackground": "${oxidized_50}",
+		"diffEditor.removedLineBackground": "${gum_50}",
 		"diffEditor.border": "${firn}",
 
 		// Editor errors and warnings
@@ -191,18 +198,18 @@
 		"sideBarSectionHeader.border": "${firn}",
 
 		// ===== LISTS AND TREES =====
-		"list.activeSelectionBackground": "${sky}",
-		"list.activeSelectionForeground": "${white}",
-		"list.inactiveSelectionBackground": "${denim}",
+		"list.activeSelectionBackground": "${denim_50}",
+		"list.activeSelectionForeground": "${dark}",
+		"list.inactiveSelectionBackground": "${denim_25}",
 		"list.inactiveSelectionForeground": "${dark}",
-		"list.hoverBackground": "${clay}",
+		"list.hoverBackground": "${clay_50}",
 		"list.hoverForeground": "${dark}",
-		"list.focusBackground": "${sky}",
-		"list.focusForeground": "${white}",
+		"list.focusBackground": "${denim_50}",
+		"list.focusForeground": "${dark}",
 		"list.focusOutline": "${sky}",
 		"list.highlightForeground": "${sky}",
-		"list.dropBackground": "${denim}",
-		"list.inactiveFocusBackground": "${snow}",
+		"list.dropBackground": "${denim_50}",
+		"list.inactiveFocusBackground": "${denim_25}",
 		"list.invalidItemForeground": "${amaranth}",
 		"list.errorForeground": "${amaranth}",
 		"list.warningForeground": "${marigold}",
@@ -233,7 +240,7 @@
 		"tab.inactiveForeground": "${gunmetal}",
 		"tab.unfocusedActiveForeground": "${gunmetal}",
 		"tab.unfocusedInactiveForeground": "${dusk}",
-		"tab.hoverBackground": "${clay}",
+		"tab.hoverBackground": "${clay_50}",
 		"tab.hoverForeground": "${dark}",
 		"tab.hoverBorder": "${transparent}",
 		"tab.border": "${firn}",
@@ -362,8 +369,8 @@
 		"breadcrumbPicker.background": "${white}",
 
 		// ===== MINIMAP =====
-		"minimap.findMatchHighlight": "${wheat}",
-		"minimap.selectionHighlight": "${denim_50}",
+		"minimap.findMatchHighlight": "${wheat_50}",
+		"minimap.selectionHighlight": "${denim_35}",
 		"minimap.errorHighlight": "${amaranth}",
 		"minimap.warningHighlight": "${marigold}",
 		"minimapGutter.addedBackground": "${glacial}",
@@ -552,21 +559,24 @@
 		"variable": "${dark}",
 		"variable.readonly": "${zaffer}",
 
+		// Builtin Constants
+		"builtinConstant": "${magenta}",
+
 		// Properties
-		"property": "${rouge}",
+		"property": "${tamarind}",
 
 		// Enum Members
 		"enumMember": "${lagoon}",
 
 		// Decorators
-		"decorator": "${taro}",
+		"decorator": "${brass}",
 
 		// Events
 		"event": "${amaranth}",
 
 		// Functions & Methods
 		"function": "${marigold}",
-		"function.decorator": "${taro}",
+		"function.decorator": "${brass}",
 		"magicFunction": "${ruby}",
 		"method": "${ruby}",
 
@@ -668,6 +678,15 @@
 			],
 			"settings": {
 				"foreground": "${lagoon}"
+			}
+		},
+		// Python builtin constants (None, True, False, ...)
+		{
+			"scope": [
+				"constant.language.python"
+			],
+			"settings": {
+				"foreground": "${magenta}"
 			}
 		},
 		// Python CAPS constants
@@ -847,7 +866,7 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "${rouge}"
+				"foreground": "${tamarind}"
 			}
 		},
 
@@ -859,7 +878,7 @@
 				"punctuation.decorator"
 			],
 			"settings": {
-				"foreground": "${taro}"
+				"foreground": "${brass}"
 			}
 		},
 		// Python-specific decorator overrides
@@ -870,7 +889,7 @@
 				"meta.function.decorator.python"
 			],
 			"settings": {
-				"foreground": "${taro}"
+				"foreground": "${brass}"
 			}
 		},
 
