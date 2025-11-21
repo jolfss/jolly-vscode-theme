@@ -2,7 +2,7 @@
   "name": "jolly",
   "displayName": "Jolly",
   "description": "A vibrant light theme inspired by volcanoes, glaciers, and the northern lights",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "SeanBrynjolfsson",
   "engines": {
     "vscode": "^1.105.0"

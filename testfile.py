@@ -30,7 +30,6 @@ class DummyClass: ...
 
 class MyClass[GenericT : Optional[BigT]](int, DummyClass):
     """A sample class to test class-related theme elements."""
-
     class_variable : Literal["I am a class variable"] = "I am a class variable"
     generic_var : GenericT
 
@@ -43,6 +42,7 @@ class MyClass[GenericT : Optional[BigT]](int, DummyClass):
     def some_classmethod(cls, arg1: str, arg2: list) -> None: ...
 
     def __init__(self, value: int):
+        super()
         local_variable = 0
         self.generic_var = cast(GenericT, value)
         self.instance_variable : int = value  # An instance variable
@@ -91,7 +91,6 @@ greeting_message = greet(user_name) # type: ignore
 my_object = MyClass(42)
 print(my_object.read_only_property)
 my_object.sample_method("banana", ["apple", "orange", "banana"])
-
 # Comments
 # This is a single-line comment.
 # TODO: Add more complex data structures.

@@ -15,12 +15,12 @@
 		"gunmetal_50": "#676F9380", // GUNMETAL_50 (50% opacity)
 
 		// INDIGO
-		"indigo": "#3a0ff8",        // INDIGO
+		"indigo": "#4925ec",        // INDIGO
 		"taro": "#9779F4",          // TARO (1:1 WHITE)
 		"zaffer": "#1715AF",        // ZAFFER (1:1 DARK)
 
 		// MAGENTA
-		"magenta": "#af00db",       // MAGENTA
+		"magenta": "#aa29ca",       // MAGENTA
 		"orchid": "#CF79E9",        // ORCHID (1:1 WHITE)
 		"amethyst": "#750eb1",      // AMETHYST (2:1 DARK)
 
@@ -28,7 +28,7 @@
 		"amaranth": "#cd0030",      // AMARANTH
 		"gum": "#DE7994",           // GUM (1:1 WHITE)
 		"gum_50": "#DE799480",      // GUM_50 (50% opacity)
-		"tamarind": "#c34f1d",
+		"tamarind": "#a54010",
 		"ruby": "#980349",          // RUBY (2:1 DARK)
 
 		// MARIGOLD
@@ -50,7 +50,7 @@
 		"lagoon": "#05726b",        // LAGOON (2:1 DARK)
 
 		// SKY
-		"sky": "#0081da",           // SKY
+		"sky": "#107ac1",           // SKY
 		"denim": "#77bae9",         // DENIM (1:1 WHITE)
 		"denim_25": "#77bae940",    // DENIM_25 (25% opacity)
 		"denim_35": "#77bae959",    // DENIM_35 (35% opacity)
@@ -110,8 +110,8 @@
 		"editorBracketHighlight.foreground1": "${sky}",
 		"editorBracketHighlight.foreground2": "${magenta}",
 		"editorBracketHighlight.foreground3": "${glacial}",
-		"editorBracketHighlight.foreground4": "${marigold}",
-		"editorBracketHighlight.foreground5": "${amaranth}",
+		"editorBracketHighlight.foreground4": "${amaranth}",
+		"editorBracketHighlight.foreground5": "${marigold}",
 		"editorBracketHighlight.foreground6": "${indigo}",
 
 		// Editor indentation guides
@@ -556,7 +556,7 @@
 		"parameter": "${polar}",
 
 		// Variables
-		"variable": "${dark}",
+		"variable": {"foreground": "${dark}", "fontStyle":"italic"},
 		"variable.readonly": "${zaffer}",
 
 		// Builtin Constants
@@ -580,28 +580,13 @@
 		"magicFunction": "${ruby}",
 		"method": "${ruby}",
 
-		// Macros
 		"macro": "${amethyst}",
-
-		// Labels
 		"label": "${amethyst}",
-
-		// Comments
 		"comment": "${dusk}",
-
-		// Strings
 		"string": "${fern}",
-
-		// Keywords
 		"keyword": "${magenta}",
-
-		// Numbers
 		"number": "${moss}",
-
-		// Regular Expressions
 		"regexp": "${marigold}",
-
-		// Operators
 		"operator": "${glacial}"
 	},
 	"tokenColors": [
@@ -616,6 +601,7 @@
 				"fontStyle": "italic"
 			}
 		},
+
 		// Comment tags (TODO, FIXME, etc.)
 		{
 			"scope": [
@@ -677,7 +663,7 @@
 				"constant.other"
 			],
 			"settings": {
-				"foreground": "${lagoon}"
+				"foreground": "${lagoon}",
 			}
 		},
 		// Python builtin constants (None, True, False, ...)
@@ -735,17 +721,17 @@
 		},
 
 		// ===== VARIABLES =====
-		{
-			"scope": [
-				"variable",
-				"variable.other",
-				"variable.language.this",
-				"variable.language.super"
-			],
-			"settings": {
-				"foreground": "${dark}"
-			}
-		},
+		// {
+		// 	"scope": [
+		// 		"variable",
+		// 		"variable.other",
+		// 		"variable.language.this",
+		// 		"variable.language.super"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "${dark}",
+		// 	}
+		// },
 		{
 			"scope": [
 				"variable.parameter",
@@ -783,7 +769,7 @@
 				"support.function.magic.python"
 			],
 			"settings": {
-				"foreground": "${ruby}"
+				"foreground": "${ruby}",
 			}
 		},
 		{
@@ -806,26 +792,17 @@
 				"entity.name.struct"
 			],
 			"settings": {
-				"foreground": "${amaranth}"
+				"foreground": "${amaranth}",
 			}
 		},
 		// ===== CLASSES & TYPES - REFERENCES =====
-		{
-			"scope": [
-				"support.class",
-				"support.type"
-			],
-			"settings": {
-				"foreground": "${sky}"
-			}
-		},
 		{
 			"scope": [
 				"entity.name.type.parameter",
 				"meta.type.parameters"
 			],
 			"settings": {
-				"foreground": "${polar}"
+				"foreground": "${polar}",
 			}
 		},
 		// Python: Type variables in generic contexts (TVar usage in type hints)
@@ -834,7 +811,7 @@
 				"meta.item-access.arguments.python"
 			],
 			"settings": {
-				"foreground": "${polar}"
+				"foreground": "${polar}",
 			}
 		},
 
@@ -927,6 +904,14 @@
 		},
 		{
 			"scope": [
+				"punctuation.separator.annotation.result"
+			],
+			"settings": {
+				"foreground": "${glacial}"
+			}
+		},
+		{
+			"scope": [
 				"punctuation.section.embedded"
 			],
 			"settings": {
@@ -1007,6 +992,6 @@
 			"settings": {
 				"foreground": "${marigold}"
 			}
-		}
+		},
 	]
 }

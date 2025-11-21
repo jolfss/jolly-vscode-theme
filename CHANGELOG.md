@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.0.1] - 2025-11-06
+
+- Updated README.md
+
 ## [1.0.0] - 2025-11-06
 
 - Initial release
