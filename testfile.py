@@ -26,15 +26,11 @@ def greet(name: str) -> str:
     return message
 
 @dataclass
-class DummyClass: ...
-
-class MyClass[GenericT : Optional[BigT]](int, DummyClass):
+class MyClass[GenericT : Optional[BigT]](int):
     """A sample class to test class-related theme elements."""
     
     class_variable : Literal["I am a class variable"] = "I am a class variable"
     """This class variable does xyz."""
-
-    generic_var : GenericT
 
     @property
     def read_only_property(self) -> int:

@@ -23,7 +23,7 @@
 			"fontStyle": "italic"
 		},
 		"variable.readonly": "#1715AF",
-		"builtinConstant": "#aa29ca",
+		"builtinConstant": "#af00db",
 		"selfParameter": {
 			"foreground": "#00569c",
 			"fontStyle": "italic"
@@ -32,7 +32,7 @@
 			"foreground": "#00569c",
 			"fontStyle": "italic"
 		},
-		"property": "#6d2886",
+		"property": "#7f40b2",
 		"enumMember": "#05726b",
 		"decorator": "#775F28",
 		"event": "#cd0030",
@@ -44,7 +44,7 @@
 		"label": "#750eb1",
 		"comment": "#9a91ae",
 		"string": "#4F681F",
-		"keyword": "#aa29ca",
+		"keyword": "#af00db",
 		"number": "#768700",
 		"regexp": "#9f6c0e",
 		"operator": "#079672"
@@ -114,7 +114,7 @@
 				"constant.other"
 			],
 			"settings": {
-				"foreground": "#aa29ca"
+				"foreground": "#af00db"
 			}
 		},
 		{
@@ -122,7 +122,7 @@
 				"constant.language.python"
 			],
 			"settings": {
-				"foreground": "#aa29ca"
+				"foreground": "#af00db"
 			}
 		},
 		{
@@ -146,7 +146,7 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#aa29ca"
+				"foreground": "#af00db"
 			}
 		},
 		{
@@ -408,7 +408,7 @@
 		"editorBracketMatch.background": "#77bae980",
 		"editorBracketMatch.border": "#107ac1",
 		"editorBracketHighlight.foreground1": "#107ac1",
-		"editorBracketHighlight.foreground2": "#aa29ca",
+		"editorBracketHighlight.foreground2": "#af00db",
 		"editorBracketHighlight.foreground3": "#079672",
 		"editorBracketHighlight.foreground4": "#cd0030",
 		"editorBracketHighlight.foreground5": "#9f6c0e",
@@ -632,7 +632,7 @@
 		"terminal.ansiGreen": "#079672",
 		"terminal.ansiYellow": "#9f6c0e",
 		"terminal.ansiBlue": "#107ac1",
-		"terminal.ansiMagenta": "#aa29ca",
+		"terminal.ansiMagenta": "#af00db",
 		"terminal.ansiCyan": "#079672",
 		"terminal.ansiWhite": "#bbc4d2",
 		"terminal.ansiBrightBlack": "#676F93",
@@ -679,7 +679,7 @@
 		"charts.yellow": "#9f6c0e",
 		"charts.orange": "#cd0030",
 		"charts.green": "#079672",
-		"charts.purple": "#aa29ca",
+		"charts.purple": "#af00db",
 		"charts.foreground": "#002a5e",
 		"charts.lines": "#bbc4d2",
 		"merge.currentHeaderBackground": "#7BC4B580",

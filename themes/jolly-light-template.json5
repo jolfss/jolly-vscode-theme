@@ -20,7 +20,7 @@
 		"zaffer": "#1715AF",        // ZAFFER (1:1 DARK)
 
 		// MAGENTA
-		"magenta": "#aa29ca",       // MAGENTA
+		"magenta": "#af00db",       // MAGENTA
 		"orchid": "#CF79E9",        // ORCHID (1:1 WHITE)
 		"amethyst": "#750eb1",      // AMETHYST (2:1 DARK)
 
@@ -31,7 +31,7 @@
 		"ruby": "#980349",          // RUBY (2:1 DARK)
 
 		// PLUM
-		"plum": "#6d2886",          // AD HOC
+		"plum": "#7f40b2",          // AD HOC
 		
 		// TAMARIND
 		"tamarind": "#a8420b",		 // AD HOC
