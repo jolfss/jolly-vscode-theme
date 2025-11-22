@@ -121,7 +121,7 @@
 		"clsParameter": {"foreground": "${polar}","fontStyle": "italic"},
 
 		// Properties
-		"property": "${plum}",
+		"property": "${tamarind}",
 
 		// Enum Members
 		"enumMember": "${lagoon}",
