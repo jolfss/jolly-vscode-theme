@@ -28,8 +28,11 @@
 		"amaranth": "#cd0030",      // AMARANTH
 		"gum": "#DE7994",           // GUM (1:1 WHITE)
 		"gum_50": "#DE799480",      // GUM_50 (50% opacity)
-		"tamarind": "#a54010",
 		"ruby": "#980349",          // RUBY (2:1 DARK)
+		
+		// TAMARIND
+		"tamarind": "#a8420b",
+		"soil": "#774006",
 
 		// MARIGOLD
 		"marigold": "#9f6c0e",      // MARIGOLD
@@ -74,6 +77,480 @@
 	},
 	"name": "Jolly Light",
 	"type": "light",
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		// Namespaces & Modules
+		"namespace": "${indigo}",
+		"module": "${indigo}",
+
+		// Classes, Enums, Interfaces, Structs (declarations)
+		"class.declaration": "${amaranth}",
+		// "class.declaration": {"foreground":"${amaranth}","fontStyle": "bold"},
+		"enum.declaration": "${amaranth}",
+		"interface.declaration": "${amaranth}",
+		"struct.declaration": "${amaranth}",
+
+		// Classes, Enums, Interfaces, Structs (references/usage)
+		"class": "${sky}",
+		"enum": "${sky}",
+		"interface": "${sky}",
+		"struct": "${sky}",
+
+		// Type Parameters & Types
+		"typeParameter": "${polar}",
+		"typeParameter.typeHint": "${polar}",
+		"type": "${sky}",
+		"*.typeHint": "${sky}",
+
+
+		// Parameters
+		"parameter": "${polar}",
+
+		// Variables
+		"variable": {"foreground": "${dark}", "fontStyle":"italic"},
+		"variable.readonly": "${zaffer}",
+
+		// Builtin Constants
+		"builtinConstant": "${magenta}",
+		
+		//	Self/Cls
+		"selfParameter": {"foreground": "${polar}","fontStyle": "italic"},
+		"clsParameter": {"foreground": "${polar}","fontStyle": "italic"},
+
+		// Properties
+		"property": "${ruby}",
+
+		// Enum Members
+		"enumMember": "${lagoon}",
+
+		// Decorators
+		"decorator": "${brass}",
+
+		// Events
+		"event": "${amaranth}",
+
+		// Functions & Methods
+		"function": "${marigold}",
+		"function.decorator": "${brass}",
+		"magicFunction": "${ruby}",
+		"method": "${ruby}",
+
+		"macro": "${amethyst}",
+		"label": "${amethyst}",
+		"comment": "${dusk}",
+		"string": "${fern}",
+		"keyword": "${magenta}",
+		"number": "${moss}",
+		"regexp": "${marigold}",
+		"operator": "${glacial}",
+	},
+	"tokenColors": [
+		// ===== COMMENTS =====
+		{
+			"scope": [
+				"comment",
+				"punctuation.definition.comment"
+			],
+			"settings": {
+				"foreground": "${dusk}",
+				"fontStyle": "italic"
+			}
+		},
+
+		// Comment tags (TODO, FIXME, etc.)
+		{
+			"scope": [
+				"keyword.codetag.notation.python"
+			],
+			"settings": {
+				"foreground": "${gunmetal}",
+				"fontStyle": "bold"
+			}
+		},
+
+		// ===== STRINGS =====
+		{
+			"scope": [
+				"string",
+				"string.quoted",
+				"string.template"
+			],
+			"settings": {
+				"foreground": "${fern}"
+			}
+		},
+		// Python string punctuation (quote marks)
+		{
+			"scope": [
+				"punctuation.definition.string.begin.python",
+				"punctuation.definition.string.end.python",
+				"string.quoted.docstring.multi.python"
+			],
+			"settings": {
+				"foreground": "${lagoon}",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
+				"string.regexp"
+			],
+			"settings": {
+				"foreground": "${marigold}"
+			}
+		},
+
+		// ===== NUMBERS =====
+		{
+			"scope": [
+				"constant.numeric",
+				"constant.language.numeric"
+			],
+			"settings": {
+				"foreground": "${moss}"
+			}
+		},
+
+		// ===== CONSTANTS =====
+		{
+			"scope": [
+				"constant.language",
+				"constant.character",
+				"constant.other",
+			],
+			"settings": {
+				"foreground": "${magenta}",
+			}
+		},
+		// Python builtin constants (None, True, False, ...)
+		{
+			"scope": [
+				"constant.language.python"
+			],
+			"settings": {
+				"foreground": "${magenta}"
+			}
+		},
+		// Python CAPS constants
+		{
+			"scope": [
+				"constant.other.caps.python"
+			],
+			"settings": {
+				"foreground": "${zaffer}"
+			}
+		},
+
+		// ===== KEYWORDS =====
+		{
+			"scope": [
+				"keyword",
+				"keyword.control",
+				"keyword.operator.new",
+				"keyword.operator.expression",
+				"keyword.operator.cast",
+				"keyword.operator.sizeof",
+				"keyword.operator.alignof",
+				"storage.type",
+				"storage.modifier"
+			],
+			"settings": {
+				"foreground": "${magenta}"
+			}
+		},
+
+		// ===== OPERATORS =====
+		{
+			"scope": [
+				"keyword.operator",
+				"keyword.operator.logical",
+				"keyword.operator.arithmetic",
+				"keyword.operator.assignment",
+				"keyword.operator.bitwise",
+				"keyword.operator.comparison",
+				"keyword.operator.relational",
+				"keyword.operator.ternary"
+			],
+			"settings": {
+				"foreground": "${glacial}"
+			}
+		},
+
+		// ===== VARIABLES =====
+		// {
+		// 	"scope": [
+		// 		"variable",
+		// 		"variable.other",
+		// 		"variable.language.this",
+		// 		"variable.language.super"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "${dark}",
+		// 	}
+		// },
+		{
+			"scope": [
+				"variable.parameter",
+				"meta.parameter"
+			],
+			"settings": {
+				"foreground": "${polar}"
+			}
+		},
+		{
+			"scope": [
+				"variable.other.property",
+				"variable.other.object.property",
+				"variable.other.member"
+			],
+			"settings": {
+				"foreground": "${ruby}"
+			}
+		},
+
+		// ===== FUNCTIONS =====
+		// {
+		// 	"scope": [
+		// 		"entity.name.function",
+		// 		"support.function",
+		// 		"meta.function-call"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "${marigold}"
+		// 	}
+		// },
+		// Python magic functions (dunder methods)
+		{
+			"scope": [
+				"support.function.magic.python"
+			],
+			"settings": {
+				"foreground": "${ruby}",
+			}
+		},
+		{
+			"scope": [
+				"entity.name.method",
+				"meta.method-call"
+			],
+			"settings": {
+				"foreground": "${ruby}"
+			}
+		},
+
+		// ===== CLASSES & TYPES - DECLARATIONS =====
+		{
+			"scope": [
+				"entity.name.type",
+				"entity.name.class",
+				"entity.name.enum",
+				"entity.name.interface",
+				"entity.name.struct"
+			],
+			"settings": {
+				"foreground": "${amaranth}",
+			}
+		},
+		// ===== CLASSES & TYPES - REFERENCES =====
+		{
+			"scope": [
+				"entity.name.type.parameter",
+				"meta.type.parameters"
+			],
+			"settings": {
+				"foreground": "${polar}",
+			}
+		},
+		// Python: Type variables in generic contexts (TVar usage in type hints)
+		{
+			"scope": [
+				"meta.item-access.arguments.python"
+			],
+			"settings": {
+				"foreground": "${polar}",
+			}
+		},
+
+		// ===== NAMESPACES & MODULES =====
+		{
+			"scope": [
+				"entity.name.namespace",
+				"entity.name.module",
+				"support.module",
+				"entity.name.type.module"
+			],
+			"settings": {
+				"foreground": "${indigo}"
+			}
+		},
+
+		// ===== TAGS (HTML/XML/JSX) =====
+		{
+			"scope": [
+				"entity.name.tag",
+				"meta.tag"
+			],
+			"settings": {
+				"foreground": "${amaranth}"
+			}
+		},
+		{
+			"scope": [
+				"entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "${tamarind}"
+			}
+		},
+
+		// ===== DECORATORS & ANNOTATIONS =====
+		{
+			"scope": [
+				"entity.name.function.decorator",
+				"meta.decorator",
+				"punctuation.decorator"
+			],
+			"settings": {
+				"foreground": "${brass}"
+			}
+		},
+		// Python-specific decorator overrides
+		{
+			"scope": [
+				"punctuation.definition.decorator.python",
+				"entity.name.function.decorator.python",
+				"meta.function.decorator.python"
+			],
+			"settings": {
+				"foreground": "${brass}"
+			}
+		},
+
+		// ===== MACROS =====
+		{
+			"scope": [
+				"entity.name.function.preprocessor",
+				"meta.preprocessor"
+			],
+			"settings": {
+				"foreground": "${amethyst}"
+			}
+		},
+
+		// ===== LABELS =====
+		{
+			"scope": [
+				"entity.name.label"
+			],
+			"settings": {
+				"foreground": "${amethyst}"
+			}
+		},
+
+		// ===== PUNCTUATION =====
+		{
+			"scope": [
+				"punctuation.separator",
+				"punctuation.terminator",
+				"punctuation.accessor",
+				"punctuation.section"
+			],
+			"settings": {
+				"foreground": "${zaffer}"
+			}
+		},
+		{	// -> character
+			"scope": [
+				"punctuation.separator.annotation.result"
+			],
+			"settings": {
+				"foreground": "${glacial}"
+			}
+		},
+		// {
+		// 	"scope": [
+		// 		"punctuation.section.embedded"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "${glacial}"
+		// 	}
+		// },
+
+		// ===== MARKUP (Markdown) =====
+		{
+			"scope": [
+				"markup.heading",
+				"entity.name.section"
+			],
+			"settings": {
+				"foreground": "${amaranth}",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
+				"markup.bold"
+			],
+			"settings": {
+				"foreground": "${dark}",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
+				"markup.italic"
+			],
+			"settings": {
+				"foreground": "${dark}",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
+				"markup.inline.raw",
+				"markup.fenced_code"
+			],
+			"settings": {
+				"foreground": "${fern}"
+			}
+		},
+		{
+			"scope": [
+				"markup.underline.link"
+			],
+			"settings": {
+				"foreground": "${sky}"
+			}
+		},
+		{
+			"scope": [
+				"markup.quote"
+			],
+			"settings": {
+				"foreground": "${dusk}",
+				"fontStyle": "italic"
+			}
+		},
+
+		// ===== INVALID =====
+		{
+			"scope": [
+				"invalid",
+				"invalid.illegal"
+			],
+			"settings": {
+				"foreground": "${amaranth}"
+			}
+		},
+		{
+			"scope": [
+				"invalid.deprecated"
+			],
+			"settings": {
+				"foreground": "${marigold}"
+			}
+		},
+	],
 	"colors": {
 		// ===== EDITOR =====
 		"editor.background": "${white}",
@@ -527,471 +1004,4 @@
 		"icon.foreground": "${gunmetal}",
 		"sash.hoverBorder": "${sky}"
 	},
-	"semanticHighlighting": true,
-	"semanticTokenColors": {
-		// Namespaces & Modules
-		"namespace": "${indigo}",
-		"module": "${indigo}",
-
-		// Classes, Enums, Interfaces, Structs (declarations)
-		"class.declaration": "${amaranth}",
-		"enum.declaration": "${amaranth}",
-		"interface.declaration": "${amaranth}",
-		"struct.declaration": "${amaranth}",
-
-		// Classes, Enums, Interfaces, Structs (references/usage)
-		"class": "${sky}",
-		"enum": "${sky}",
-		"interface": "${sky}",
-		"struct": "${sky}",
-
-		// Type Parameters & Types
-		"typeParameter": "${polar}",
-		"typeParameter.typeHint": "${polar}",
-		"type": "${sky}",
-		"*.typeHint": "${sky}",
-
-
-		// Parameters
-		"parameter": "${polar}",
-
-		// Variables
-		"variable": {"foreground": "${dark}", "fontStyle":"italic"},
-		"variable.readonly": "${zaffer}",
-
-		// Builtin Constants
-		"builtinConstant": "${magenta}",
-
-		// Properties
-		"property": "${tamarind}",
-
-		// Enum Members
-		"enumMember": "${lagoon}",
-
-		// Decorators
-		"decorator": "${brass}",
-
-		// Events
-		"event": "${amaranth}",
-
-		// Functions & Methods
-		"function": "${marigold}",
-		"function.decorator": "${brass}",
-		"magicFunction": "${ruby}",
-		"method": "${ruby}",
-
-		"macro": "${amethyst}",
-		"label": "${amethyst}",
-		"comment": "${dusk}",
-		"string": "${fern}",
-		"keyword": "${magenta}",
-		"number": "${moss}",
-		"regexp": "${marigold}",
-		"operator": "${glacial}"
-	},
-	"tokenColors": [
-		// ===== COMMENTS =====
-		{
-			"scope": [
-				"comment",
-				"punctuation.definition.comment"
-			],
-			"settings": {
-				"foreground": "${dusk}",
-				"fontStyle": "italic"
-			}
-		},
-
-		// Comment tags (TODO, FIXME, etc.)
-		{
-			"scope": [
-				"keyword.codetag.notation.python"
-			],
-			"settings": {
-				"foreground": "${gunmetal}",
-				"fontStyle": "italic"
-			}
-		},
-
-		// ===== STRINGS =====
-		{
-			"scope": [
-				"string",
-				"string.quoted",
-				"string.template"
-			],
-			"settings": {
-				"foreground": "${fern}"
-			}
-		},
-		// Python string punctuation (quote marks)
-		{
-			"scope": [
-				"punctuation.definition.string.begin.python",
-				"punctuation.definition.string.end.python",
-				"string.quoted.docstring.multi.python"
-			],
-			"settings": {
-				"foreground": "${lagoon}"
-			}
-		},
-		{
-			"scope": [
-				"string.regexp"
-			],
-			"settings": {
-				"foreground": "${marigold}"
-			}
-		},
-
-		// ===== NUMBERS =====
-		{
-			"scope": [
-				"constant.numeric",
-				"constant.language.numeric"
-			],
-			"settings": {
-				"foreground": "${moss}"
-			}
-		},
-
-		// ===== CONSTANTS =====
-		{
-			"scope": [
-				"constant.language",
-				"constant.character",
-				"constant.other"
-			],
-			"settings": {
-				"foreground": "${lagoon}",
-			}
-		},
-		// Python builtin constants (None, True, False, ...)
-		{
-			"scope": [
-				"constant.language.python"
-			],
-			"settings": {
-				"foreground": "${magenta}"
-			}
-		},
-		// Python CAPS constants
-		{
-			"scope": [
-				"constant.other.caps.python"
-			],
-			"settings": {
-				"foreground": "${zaffer}"
-			}
-		},
-
-		// ===== KEYWORDS =====
-		{
-			"scope": [
-				"keyword",
-				"keyword.control",
-				"keyword.operator.new",
-				"keyword.operator.expression",
-				"keyword.operator.cast",
-				"keyword.operator.sizeof",
-				"keyword.operator.alignof",
-				"storage.type",
-				"storage.modifier"
-			],
-			"settings": {
-				"foreground": "${magenta}"
-			}
-		},
-
-		// ===== OPERATORS =====
-		{
-			"scope": [
-				"keyword.operator",
-				"keyword.operator.logical",
-				"keyword.operator.arithmetic",
-				"keyword.operator.assignment",
-				"keyword.operator.bitwise",
-				"keyword.operator.comparison",
-				"keyword.operator.relational",
-				"keyword.operator.ternary"
-			],
-			"settings": {
-				"foreground": "${glacial}"
-			}
-		},
-
-		// ===== VARIABLES =====
-		// {
-		// 	"scope": [
-		// 		"variable",
-		// 		"variable.other",
-		// 		"variable.language.this",
-		// 		"variable.language.super"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "${dark}",
-		// 	}
-		// },
-		{
-			"scope": [
-				"variable.parameter",
-				"meta.parameter"
-			],
-			"settings": {
-				"foreground": "${polar}"
-			}
-		},
-		{
-			"scope": [
-				"variable.other.property",
-				"variable.other.object.property",
-				"variable.other.member"
-			],
-			"settings": {
-				"foreground": "${ruby}"
-			}
-		},
-
-		// ===== FUNCTIONS =====
-		{
-			"scope": [
-				"entity.name.function",
-				"support.function",
-				"meta.function-call"
-			],
-			"settings": {
-				"foreground": "${marigold}"
-			}
-		},
-		// Python magic functions (dunder methods)
-		{
-			"scope": [
-				"support.function.magic.python"
-			],
-			"settings": {
-				"foreground": "${ruby}",
-			}
-		},
-		{
-			"scope": [
-				"entity.name.method",
-				"meta.method-call"
-			],
-			"settings": {
-				"foreground": "${ruby}"
-			}
-		},
-
-		// ===== CLASSES & TYPES - DECLARATIONS =====
-		{
-			"scope": [
-				"entity.name.type",
-				"entity.name.class",
-				"entity.name.enum",
-				"entity.name.interface",
-				"entity.name.struct"
-			],
-			"settings": {
-				"foreground": "${amaranth}",
-			}
-		},
-		// ===== CLASSES & TYPES - REFERENCES =====
-		{
-			"scope": [
-				"entity.name.type.parameter",
-				"meta.type.parameters"
-			],
-			"settings": {
-				"foreground": "${polar}",
-			}
-		},
-		// Python: Type variables in generic contexts (TVar usage in type hints)
-		{
-			"scope": [
-				"meta.item-access.arguments.python"
-			],
-			"settings": {
-				"foreground": "${polar}",
-			}
-		},
-
-		// ===== NAMESPACES & MODULES =====
-		{
-			"scope": [
-				"entity.name.namespace",
-				"entity.name.module",
-				"support.module",
-				"entity.name.type.module"
-			],
-			"settings": {
-				"foreground": "${indigo}"
-			}
-		},
-
-		// ===== TAGS (HTML/XML/JSX) =====
-		{
-			"scope": [
-				"entity.name.tag",
-				"meta.tag"
-			],
-			"settings": {
-				"foreground": "${amaranth}"
-			}
-		},
-		{
-			"scope": [
-				"entity.other.attribute-name"
-			],
-			"settings": {
-				"foreground": "${tamarind}"
-			}
-		},
-
-		// ===== DECORATORS & ANNOTATIONS =====
-		{
-			"scope": [
-				"entity.name.function.decorator",
-				"meta.decorator",
-				"punctuation.decorator"
-			],
-			"settings": {
-				"foreground": "${brass}"
-			}
-		},
-		// Python-specific decorator overrides
-		{
-			"scope": [
-				"punctuation.definition.decorator.python",
-				"entity.name.function.decorator.python",
-				"meta.function.decorator.python"
-			],
-			"settings": {
-				"foreground": "${brass}"
-			}
-		},
-
-		// ===== MACROS =====
-		{
-			"scope": [
-				"entity.name.function.preprocessor",
-				"meta.preprocessor"
-			],
-			"settings": {
-				"foreground": "${amethyst}"
-			}
-		},
-
-		// ===== LABELS =====
-		{
-			"scope": [
-				"entity.name.label"
-			],
-			"settings": {
-				"foreground": "${amethyst}"
-			}
-		},
-
-		// ===== PUNCTUATION =====
-		{
-			"scope": [
-				"punctuation.separator",
-				"punctuation.terminator",
-				"punctuation.accessor"
-			],
-			"settings": {
-				"foreground": "${dark}"
-			}
-		},
-		{
-			"scope": [
-				"punctuation.separator.annotation.result"
-			],
-			"settings": {
-				"foreground": "${glacial}"
-			}
-		},
-		{
-			"scope": [
-				"punctuation.section.embedded"
-			],
-			"settings": {
-				"foreground": "${glacial}"
-			}
-		},
-
-		// ===== MARKUP (Markdown) =====
-		{
-			"scope": [
-				"markup.heading",
-				"entity.name.section"
-			],
-			"settings": {
-				"foreground": "${amaranth}",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"scope": [
-				"markup.bold"
-			],
-			"settings": {
-				"foreground": "${dark}",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"scope": [
-				"markup.italic"
-			],
-			"settings": {
-				"foreground": "${dark}",
-				"fontStyle": "italic"
-			}
-		},
-		{
-			"scope": [
-				"markup.inline.raw",
-				"markup.fenced_code"
-			],
-			"settings": {
-				"foreground": "${fern}"
-			}
-		},
-		{
-			"scope": [
-				"markup.underline.link"
-			],
-			"settings": {
-				"foreground": "${sky}"
-			}
-		},
-		{
-			"scope": [
-				"markup.quote"
-			],
-			"settings": {
-				"foreground": "${dusk}",
-				"fontStyle": "italic"
-			}
-		},
-
-		// ===== INVALID =====
-		{
-			"scope": [
-				"invalid",
-				"invalid.illegal"
-			],
-			"settings": {
-				"foreground": "${amaranth}"
-			}
-		},
-		{
-			"scope": [
-				"invalid.deprecated"
-			],
-			"settings": {
-				"foreground": "${marigold}"
-			}
-		},
-	]
 }

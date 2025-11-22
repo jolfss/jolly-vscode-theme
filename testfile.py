@@ -30,14 +30,17 @@ class DummyClass: ...
 
 class MyClass[GenericT : Optional[BigT]](int, DummyClass):
     """A sample class to test class-related theme elements."""
+    
     class_variable : Literal["I am a class variable"] = "I am a class variable"
+    """This class variable does xyz."""
+
     generic_var : GenericT
 
     @property
     def read_only_property(self) -> int:
         """A read-only property."""
         return self.instance_variable * 2
-    
+     
     @classmethod
     def some_classmethod(cls, arg1: str, arg2: list) -> None: ...
 
