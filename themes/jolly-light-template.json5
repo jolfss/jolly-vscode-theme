@@ -29,10 +29,13 @@
 		"gum": "#DE7994",           // GUM (1:1 WHITE)
 		"gum_50": "#DE799480",      // GUM_50 (50% opacity)
 		"ruby": "#980349",          // RUBY (2:1 DARK)
+
+		// PLUM
+		"plum": "#6d2886",          // AD HOC
 		
 		// TAMARIND
-		"tamarind": "#a8420b",
-		"soil": "#774006",
+		"tamarind": "#a8420b",		 // AD HOC
+		"soil": "#774006",			 // AD HOC
 
 		// MARIGOLD
 		"marigold": "#9f6c0e",      // MARIGOLD
@@ -118,7 +121,7 @@
 		"clsParameter": {"foreground": "${polar}","fontStyle": "italic"},
 
 		// Properties
-		"property": "${ruby}",
+		"property": "${plum}",
 
 		// Enum Members
 		"enumMember": "${lagoon}",

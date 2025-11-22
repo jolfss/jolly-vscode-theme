@@ -15,17 +15,18 @@ The source theme is in [themes/jolly-light-template.json5](themes/jolly-light-te
 To build the final theme:
 
 ```bash
-uv run build_theme.py
+npm run build
 ```
 
 This generates [themes/jolly-light-color-theme.json](themes/jolly-light-color-theme.json) from the template.
 
-### Watch Mode
+### Making Edits
 
-To automatically rebuild when you edit the template:
+If you want to adapt the theme, an easy way to do so is to use `Ctrl(Cmd) + Shift + P` and then select `Debug: Start Debuggin`; this should allow edits to the `*-theme.json` to reflect immediately in the extension. To get changes to reflect you can use either:
 
 ```bash
-npm run watch
+npm run build # will write from the -template to the -theme
+npm run watch # will propagate writes to the -template to the -theme for you
 ```
 
 ### Color Preprocess Example
@@ -43,6 +44,11 @@ npm run watch
 }
 ```
 
+## Creating/Packaging the Extension
+```bash
+npx vsce package  # produces the jolly-*.*.*.vsix vscode package
+```
+
 ## Files
 
 - [themes/jolly-light-template.json5](themes/jolly-light-template.json5) - **Edit this file** (source with variables)
@@ -53,4 +59,4 @@ npm run watch
 
 ## License
 
-Creative Commons - enjoy :)
+Creative Commons; CC-BY 4.0 - enjoy :)
