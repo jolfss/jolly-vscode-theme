@@ -1,9 +1,9 @@
 {
-  "name": "jolly",
-  "displayName": "Jolly",
-  "description": "A vibrant light theme inspired by volcanoes, glaciers, and the northern lights",
-  "version": "1.0.2",
-  "publisher": "SeanBrynjolfsson",
+  "name": "jolly-vscode-theme",
+  "displayName": "jolly-vscode-theme",
+  "description": "Vibrant light and dark themes inspired by volcanoes, glaciers, and the northern lights",
+  "version": "1.1.0",
+  "publisher": "jolfss",
   "engines": {
     "vscode": "^1.105.0"
   },
@@ -14,6 +14,7 @@
     "theme",
     "color-theme",
     "light",
+    "dark",
     "volcanic",
     "glacier",
     "aurora",
@@ -25,6 +26,11 @@
         "label": "Jolly Light",
         "uiTheme": "vs",
         "path": "./themes/jolly-light-color-theme.json"
+      },
+      {
+        "label": "Jolly Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/jolly-dark-color-theme.json"
       }
     ]
   },

@@ -5,6 +5,11 @@
 		"snow": "#dadfe6",          // SNOW
 		"firn": "#bbc4d2",          // FIRN
 		"dark": "#002a5e",          // DARK
+		"onAccent": "#eef2f7",      // Text on saturated accent colors
+		"selectionIcon": "#eef2f7",
+		"ansiBlack": "#002a5e",
+		"ansiWhite": "#bbc4d2",
+		"ansiBrightWhite": "#eef2f7",
 
 		// ===== CHROMATIC =====
 		// DUSK
@@ -111,7 +116,7 @@
 
 		// Variables
 		"variable": {"foreground": "${dark}", "fontStyle":"italic"},
-		"variable.readonly": "${zaffer}",
+		// readonly variables are mapped to TextMate scopes via semanticTokenScopes
 
 		// Builtin Constants
 		"builtinConstant": "${magenta}",
@@ -146,6 +151,14 @@
 		"number": "${moss}",
 		"regexp": "${marigold}",
 		"operator": "${glacial}",
+	},
+	"semanticTokenScopes": {
+		"variable.readonly": [
+			"constant.other.caps"
+		],
+		"variable.readonly:python": [
+			"constant.other.caps.python"
+		]
 	},
 	"tokenColors": [
 		// ===== COMMENTS =====
@@ -237,6 +250,7 @@
 		// Python CAPS constants
 		{
 			"scope": [
+				"constant.other.caps",
 				"constant.other.caps.python"
 			],
 			"settings": {
@@ -312,6 +326,16 @@
 		},
 
 		// ===== FUNCTIONS =====
+		// Gleam function declarations (the language grammar uses this scope for
+		// both top-level functions and function-like members).
+		{
+			"scope": [
+				"entity.name.function.gleam"
+			],
+			"settings": {
+				"foreground": "${ruby}"
+			}
+		},
 		// {
 		// 	"scope": [
 		// 		"entity.name.function",
@@ -355,6 +379,16 @@
 			}
 		},
 		// ===== CLASSES & TYPES - REFERENCES =====
+		// Gleam named types. Keep this language-specific rule separate from the
+		// declaration scopes above so Gleam types use the regular type color.
+		{
+			"scope": [
+				"entity.name.type.gleam"
+			],
+			"settings": {
+				"foreground": "${sky}"
+			}
+		},
 		{
 			"scope": [
 				"entity.name.type.parameter",
@@ -662,7 +696,7 @@
 		"activityBar.inactiveForeground": "${dusk}",
 		"activityBar.border": "${firn}",
 		"activityBarBadge.background": "${amaranth}",
-		"activityBarBadge.foreground": "${white}",
+		"activityBarBadge.foreground": "${onAccent}",
 		"activityBar.activeBorder": "${sky}",
 		"activityBar.activeBackground": "${transparent}",
 		"activityBar.activeFocusBorder": "${sky}",
@@ -696,7 +730,7 @@
 		"listFilterWidget.background": "${white}",
 		"listFilterWidget.outline": "${sky}",
 		"listFilterWidget.noMatchesOutline": "${amaranth}",
-		"list.activeSelectionIconForeground": "${white}",
+		"list.activeSelectionIconForeground": "${selectionIcon}",
 		"list.focusAndSelectionOutline": "${sky}",
 
 		// Tree indentation
@@ -749,20 +783,20 @@
 		"statusBar.foreground": "${dark}",
 		"statusBar.border": "${firn}",
 		"statusBar.debuggingBackground": "${marigold}",
-		"statusBar.debuggingForeground": "${white}",
+		"statusBar.debuggingForeground": "${onAccent}",
 		"statusBar.noFolderBackground": "${snow}",
 		"statusBar.noFolderForeground": "${dark}",
 		"statusBarItem.activeBackground": "${denim_50}",
 		"statusBarItem.hoverBackground": "${denim_25}",
 		"statusBarItem.prominentBackground": "${sky}",
-		"statusBarItem.prominentForeground": "${white}",
+		"statusBarItem.prominentForeground": "${onAccent}",
 		"statusBarItem.prominentHoverBackground": "${polar}",
 		"statusBarItem.remoteBackground": "${sky}",
-		"statusBarItem.remoteForeground": "${white}",
+		"statusBarItem.remoteForeground": "${onAccent}",
 		"statusBarItem.errorBackground": "${amaranth}",
-		"statusBarItem.errorForeground": "${white}",
+		"statusBarItem.errorForeground": "${onAccent}",
 		"statusBarItem.warningBackground": "${marigold}",
-		"statusBarItem.warningForeground": "${white}",
+		"statusBarItem.warningForeground": "${onAccent}",
 
 		// ===== TITLE BAR =====
 		"titleBar.activeBackground": "${snow}",
@@ -777,17 +811,17 @@
 		"menubar.selectionBorder": "${firn}",
 		"menu.foreground": "${dark}",
 		"menu.background": "${white}",
-		"menu.selectionForeground": "${white}",
+		"menu.selectionForeground": "${onAccent}",
 		"menu.selectionBackground": "${sky}",
 		"menu.separatorBackground": "${firn}",
 		"menu.border": "${firn}",
 
 		// ===== BUTTONS =====
 		"button.background": "${sky}",
-		"button.foreground": "${white}",
+		"button.foreground": "${onAccent}",
 		"button.hoverBackground": "${polar}",
 		"button.secondaryBackground": "${amethyst}",
-		"button.secondaryForeground": "${white}",
+		"button.secondaryForeground": "${onAccent}",
 		"button.secondaryHoverBackground": "${amethyst}",
 		"button.border": "${transparent}",
 
@@ -830,7 +864,7 @@
 
 		// ===== BADGES =====
 		"badge.background": "${sky}",
-		"badge.foreground": "${white}",
+		"badge.foreground": "${onAccent}",
 
 		// ===== SCROLLBAR =====
 		"scrollbar.shadow": "${shadow}",
@@ -866,14 +900,14 @@
 		"terminalCursor.foreground": "${dark}",
 
 		// Terminal ANSI colors
-		"terminal.ansiBlack": "${dark}",
+		"terminal.ansiBlack": "${ansiBlack}",
 		"terminal.ansiRed": "${amaranth}",
 		"terminal.ansiGreen": "${glacial}",
 		"terminal.ansiYellow": "${marigold}",
 		"terminal.ansiBlue": "${sky}",
 		"terminal.ansiMagenta": "${magenta}",
 		"terminal.ansiCyan": "${glacial}",
-		"terminal.ansiWhite": "${firn}",
+		"terminal.ansiWhite": "${ansiWhite}",
 
 		// Terminal ANSI bright colors
 		"terminal.ansiBrightBlack": "${gunmetal}",
@@ -883,7 +917,7 @@
 		"terminal.ansiBrightBlue": "${denim}",
 		"terminal.ansiBrightMagenta": "${orchid}",
 		"terminal.ansiBrightCyan": "${oxidized}",
-		"terminal.ansiBrightWhite": "${white}",
+		"terminal.ansiBrightWhite": "${ansiBrightWhite}",
 
 		// ===== GIT COLORS =====
 		"gitDecoration.addedResourceForeground": "${glacial}",
@@ -966,10 +1000,10 @@
 
 		// ===== EXTENSIONS =====
 		"extensionButton.prominentBackground": "${sky}",
-		"extensionButton.prominentForeground": "${white}",
+		"extensionButton.prominentForeground": "${onAccent}",
 		"extensionButton.prominentHoverBackground": "${polar}",
 		"extensionBadge.remoteBackground": "${sky}",
-		"extensionBadge.remoteForeground": "${white}",
+		"extensionBadge.remoteForeground": "${onAccent}",
 		"extensionIcon.starForeground": "${marigold}",
 		"extensionIcon.verifiedForeground": "${glacial}",
 

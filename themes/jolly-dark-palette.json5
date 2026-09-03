@@ -1,0 +1,79 @@
+{
+	// Jolly Dark shares the token mappings and UI definitions from the light
+	// template, while replacing the palette with colors tuned for dark surfaces.
+	"theme": {
+		"name": "Jolly Dark",
+		"type": "dark",
+	},
+	"variables": {
+		// ===== LUMINOSITY =====
+		"white": "#0e1621",         // Main editor surface
+		"snow": "#131e2b",          // Raised and navigation surfaces
+		"firn": "#2a3a4f",          // Borders and indentation guides
+		"dark": "#dce8f7",          // Primary foreground
+		"onAccent": "#07111b",      // Dark text contrasts with the bright accents
+		"selectionIcon": "#dce8f7",
+		"ansiBlack": "#0a111a",
+		"ansiWhite": "#b8c5d6",
+		"ansiBrightWhite": "#f7fbff",
+
+		// ===== CHROMATIC =====
+		"dusk": "#8997ab",
+		"clay": "#34445c",
+		"clay_50": "#34445c80",
+		"gunmetal": "#a4b2c6",
+		"gunmetal_50": "#596a8280",
+
+		"indigo": "#a58bff",
+		"taro": "#c1afff",
+		"zaffer": "#917cff",
+
+		"magenta": "#ec7bff",
+		"orchid": "#f3a8ff",
+		"amethyst": "#d592ed",
+
+		"amaranth": "#ff7092",
+		"gum": "#592a3b",
+		"gum_50": "#ff709240",
+		"ruby": "#ff83ad",
+
+		"plum": "#cf90f2",
+		"tamarind": "#f0a264",
+		"soil": "#d68b4d",
+
+		"marigold": "#e7bc61",
+		"wheat": "#574723",
+		"wheat_50": "#e7bc6140",
+		"brass": "#d9a950",
+
+		"moss": "#b6cf65",
+		"lichen": "#435027",
+		"lichen_50": "#b6cf6540",
+		"fern": "#9fca75",
+
+		"glacial": "#56d9b2",
+		"oxidized": "#8ae5cb",
+		"oxidized_50": "#56d9b240",
+		"lagoon": "#62d5ca",
+
+		"sky": "#64b5f6",
+		"denim": "#284f70",
+		"denim_25": "#64b5f633",
+		"denim_35": "#64b5f647",
+		"denim_50": "#64b5f659",
+		"denim_75": "#64b5f68c",
+		"polar": "#86c5ff",
+
+		"transparent": "#00000000",
+		"shadow": "#00000066",
+
+		"mergeCurrent": "#56d9b2",
+		"mergeCurrentHeader": "#56d9b24d",
+		"mergeCurrentContent": "#56d9b226",
+		"mergeIncoming": "#64b5f6",
+		"mergeIncomingHeader": "#64b5f64d",
+		"mergeIncomingContent": "#64b5f626",
+		"mergeCommonHeader": "#8997ab40",
+		"mergeCommonContent": "#8997ab26",
+	},
+}

@@ -22,7 +22,6 @@
 			"foreground": "#002a5e",
 			"fontStyle": "italic"
 		},
-		"variable.readonly": "#1715AF",
 		"builtinConstant": "#af00db",
 		"selfParameter": {
 			"foreground": "#00569c",
@@ -48,6 +47,14 @@
 		"number": "#768700",
 		"regexp": "#9f6c0e",
 		"operator": "#079672"
+	},
+	"semanticTokenScopes": {
+		"variable.readonly": [
+			"constant.other.caps"
+		],
+		"variable.readonly:python": [
+			"constant.other.caps.python"
+		]
 	},
 	"tokenColors": [
 		{
@@ -127,6 +134,7 @@
 		},
 		{
 			"scope": [
+				"constant.other.caps",
 				"constant.other.caps.python"
 			],
 			"settings": {
@@ -185,6 +193,14 @@
 		},
 		{
 			"scope": [
+				"entity.name.function.gleam"
+			],
+			"settings": {
+				"foreground": "#980349"
+			}
+		},
+		{
+			"scope": [
 				"support.function.magic.python"
 			],
 			"settings": {
@@ -210,6 +226,14 @@
 			],
 			"settings": {
 				"foreground": "#cd0030"
+			}
+		},
+		{
+			"scope": [
+				"entity.name.type.gleam"
+			],
+			"settings": {
+				"foreground": "#107ac1"
 			}
 		},
 		{

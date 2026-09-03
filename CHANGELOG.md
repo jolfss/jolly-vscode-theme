@@ -6,6 +6,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-09-02
+
+- Added the Jolly Dark theme.
+- Added Gleam-specific highlighting for function and type scopes.
+- Updated the extension identity to `jolfss.jolly-vscode-theme`.
+
 ## [1.0.2] - 2025-11-22
 
 - Updated README.md with `npm run watch`

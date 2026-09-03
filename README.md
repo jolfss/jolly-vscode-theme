@@ -1,6 +1,6 @@
-# jolly-light
+# Jolly
 
-A vibrant light theme for VSCode inspired by volcanoes, glaciers, and the northern lights. If your code starts to feel too hot, add some types or modularize to cool it down :-)
+Vibrant light and dark themes for VS Code inspired by volcanoes, glaciers, and the northern lights. If your code starts to feel too hot, add some types or modularize to cool it down :-)
 
 ![A screenshot of the VSCode IDE with a python file for demonstrating syntax highlighting; the theme is vibrant and blue-tinted.](JOLLY-LIGHT.png)
 
@@ -8,7 +8,7 @@ A vibrant light theme for VSCode inspired by volcanoes, glaciers, and the northe
 
 This theme uses a simple build system to manage color variables in a template.
 
-The source theme is in [themes/jolly-light-template.json5](themes/jolly-light-template.json5), which supports:
+The shared source theme is in [themes/jolly-light-template.json5](themes/jolly-light-template.json5), and the dark palette overrides are in [themes/jolly-dark-palette.json5](themes/jolly-dark-palette.json5). The build supports:
 - Color variables (defined in the `variables` section, referenced later using `${variableName}` syntax in the main body)
 - Comments are elided (using `//` syntax for json5)
 
@@ -18,7 +18,7 @@ To build the final theme:
 npm run build
 ```
 
-This generates [themes/jolly-light-color-theme.json](themes/jolly-light-color-theme.json) from the template.
+This generates both `themes/jolly-light-color-theme.json` and `themes/jolly-dark-color-theme.json` from the shared template.
 
 ### Making Edits
 
@@ -52,7 +52,9 @@ npx vsce package  # produces the jolly-*.*.*.vsix vscode package
 ## Files
 
 - [themes/jolly-light-template.json5](themes/jolly-light-template.json5) - **Edit this file** (source with variables)
+- [themes/jolly-dark-palette.json5](themes/jolly-dark-palette.json5) - Dark palette and theme metadata overrides
 - [themes/jolly-light-color-theme.json](themes/jolly-light-color-theme.json) - Generated theme (do not edit)
+- [themes/jolly-dark-color-theme.json](themes/jolly-dark-color-theme.json) - Generated theme (do not edit)
 - [build_theme.py](build_theme.py) - Build script
 - [pyproject.toml](pyproject.toml) - Python dependencies (json5)
 

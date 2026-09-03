@@ -4,3 +4,13 @@
 vsc-extension-quickstart.md
 .venv/**
 *.vsix
+.DS_Store
+THEME.md
+build_theme.py
+pyproject.toml
+uv.lock
+testfile.py
+*.gleam
+themes/*-template.json5
+themes/*.backup
+themes/*-palette.json5
